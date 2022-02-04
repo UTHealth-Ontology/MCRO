@@ -1,7 +1,9 @@
 IMPORTS
 ===============
 
-target file used was swo-merged.owl from https://github.com/allysonlister/swo/tree/master/dev/ontology
+~~target file used was swo-merged.owl from https://github.com/allysonlister/swo/tree/master/dev/ontology~~
+
+target file used was swo-inferred.owl
 
 EXTRACT
 --------------
