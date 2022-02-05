@@ -23,7 +23,6 @@
         <dc:creator xml:lang="en">Robert Stevens</dc:creator>
         <dc:title xml:lang="en">SWO (The Software Ontology)</dc:title>
         <terms:description xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licences, provenance and associated data.</terms:description>
-        <terms:license xml:lang="en">SWO is provided under a Creative Commons Attribution 4.0 International (CC BY 4.0) license (https://creativecommons.org/licenses/by/4.0/).</terms:license>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of release: 21.10.2019</rdfs:comment>
         <rdfs:comment xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. It contains SWO-specific classes and axioms as well as imports from:
 
@@ -164,6 +163,18 @@
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
@@ -1714,22 +1725,6 @@ information_encoding
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000056"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/swo/organization/SWO_9000005"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000004"/>
             </owl:Restriction>
@@ -1775,12 +1770,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000084">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>CEL binary format is a binary data format specification created by Affymetrix where values are stored in little-endian format. The CEL format stores the results of the intensity calculations on the pixel values of the DAT file. This includes an intensity value, standard deviation of the intensity, the number of pixels used to calculate the intensity value, a flag to indicate an outlier as calculated by the algorithm and a user defined flag indicating the feature should be excluded from future analysis. The file stores the previously stated data for each feature on the probe array.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/cel.html, accessed 22 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -2227,12 +2216,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000146">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000118"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004000"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/swo/version/SWO_2000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Version 2.6 of the Python programming language.</obo:IAO_0000115>
         <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -2245,12 +2228,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000147">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000118"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004000"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/swo/version/SWO_2000034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Version 2.7 of the Python programming language.</obo:IAO_0000115>
         <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -3918,12 +3895,6 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100035">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>BPMAP is a binary data format specification created by Affymetrix where the data is stored in big-endian format. The BPMAP format contains information relating to the design of the Affymetrix tiling arrays.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/bpmap.html, accessed 22 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -3954,12 +3925,6 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100054">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The CDF binary format is a binary data format specification created by Affymetrix was created for faster access and smaller file size in comparison to the CDF ASCII format. The values in the file are stored in little-endian format. CDF binary format describes the layout for an Affymetrix GeneChip array. An array may contain Expression, Genotyping, CustomSeq, Copy Number and/or Tag probe sets. All probe set names within an array are unique. Multiple copies of a probe set may exist on a single array as long as each copy has a unique name.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/cdf.html, accessed 22 May 2013.</obo:IAO_0000119>
         <rdfs:comment>It is unclear whether, originally, this format was intended to be the ASCII or binary version of the CDF format. As such, this class has been renamed as the binary format, and a new class created (CDF ASCII format) to make both options available.</rdfs:comment>
@@ -4253,12 +4218,6 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100122">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>CHP binary format is a binary data format specification created by Affymetrix, stored in little-endian format and used to store expression, resequencing and genotyping results from algorithms implemented in the GCOS 1.2, 1.3 and 1.4 and BRLMM Analysis Tool software applications.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/chp.html, http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/chp-xda.html, accessed 22 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -5217,12 +5176,6 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000057">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000042"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The CDF ASCII format is an ASCII data format specification created by Affymetrix similar to the Windows INI format. This format describes the layout for an Affymetrix GeneChip array. An array may contain Expression, Genotyping, CustomSeq, Copy Number and/or Tag probe sets. All probe set names within an array are unique. Multiple copies of a probe set may exist on a single array as long as each copy has a unique name.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/cdf.html, accessed 22 May 2013</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -5235,12 +5188,6 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000058">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>BAR is a binary data format specification created by Affymetrix where the data is stored in big-endian format. The format of the file is a header section followed by sequences sections (one section per sequence defined). The BAR file contains one and two sample analysis results (signal and p-values) from the tiling array software.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/bar.html, accessed 22 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -5253,12 +5200,6 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000059">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000042"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>CEL ASCII format is ASCII data format specification created by Affymetrix similar to the Windows INI format. The CEL format stores the results of the intensity calculations on the pixel values of the DAT file. This includes an intensity value, standard deviation of the intensity, the number of pixels used to calculate the intensity value, a flag to indicate an outlier as calculated by the algorithm and a user defined flag indicating the feature should be excluded from future analysis. The file stores the previously stated data for each feature on the probe array.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/cel.html, accessed 22 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -5270,22 +5211,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000060 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000060">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000098"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>Affymetrix-compliant data is data produced in a format compatible with Affymetrix software. This is a defined class where other data classes will be inferred to be members if they have a data format specification which has been published by Affymetrix.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
@@ -5311,12 +5236,6 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000062">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000061"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004000"/>
-                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000063"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>FCS3.0 is version 3.0 of the Data File Standard for Flow Cytometry. It contains a mechanism for handling data sets of 100 megabytes and larger, support for UNICODE text for keyword values, support for cyclic redundancy check (CRC) validation for each data set, a requirement for the inclusion of information describing the method of signal amplification and increased support for the inclusion of time as a measurement parameter.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed May 29. 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -5768,22 +5687,6 @@ keep the language concise, consistent, intuitive and flexible.</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000004">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000043"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                <owl:hasValue rdf:resource="http://www.ebi.ac.uk/swo/organization/SWO_9000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
@@ -11655,815 +11558,6 @@ For example, bagging of decision trees algorithm includes the specification of a
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000023 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000023">
-        <rdfs:label>Affymetrix</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000033 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000033">
-        <rdfs:label>Agilent Technologies</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000036 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000036">
-        <rdfs:label>Applied Biosystems</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000038 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000038">
-        <rdfs:label>Applied Precision Life Science</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000061 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000061">
-        <rdfs:label>Bahler Lab</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000067 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000067">
-        <rdfs:label>Bio-Rad Laboratories, Inc.</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000069 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000069">
-        <rdfs:label>Bio Discovery</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000073 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000073">
-        <rdfs:label>Bioconductor</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000074 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000074">
-        <rdfs:comment></rdfs:comment>
-        <rdfs:label>Biometric Research Branch</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000093 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000093">
-        <rdfs:label>COSE, France</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000119 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000119">
-        <rdfs:label>Clontech Laboratories, Inc</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000131 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000131">
-        <rdfs:label>Dana-Farber Cancer Institute and Harvard School of Public Health</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000136 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000136">
-        <obo:IAO_0000118>European Molecular Biology Laboratory</obo:IAO_0000118>
-        <rdfs:label>EMBL</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000151 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000151">
-        <rdfs:label>Fujifilm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000160 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000160">
-        <rdfs:label>GE Healthcare Life Sciences</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000198 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000198">
-        <rdfs:label>Genedata</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000204 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000204">
-        <rdfs:label>Genicon Sciences</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000211 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000211">
-        <rdfs:label>Grid grinder</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000223 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000223">
-        <rdfs:label>Havard School of Public Health</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000232 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000232">
-        <rdfs:label>Illumina</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000240 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000240">
-        <rdfs:label>Incyte Genomics</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000242 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000242">
-        <rdfs:label>Institute for Genomics and Bioinformatics Graz University of Technology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000244 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000244">
-        <rdfs:label>J. Craig Venter Institute</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000286 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000286">
-        <rdfs:label>MWG Biotech</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000290 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000290">
-        <rdfs:label>Matforsk</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000299 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000299">
-        <rdfs:label>Molecular Devices</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000300 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000300">
-        <rdfs:label>Molecular Neuroscience Core, Center for Behavioral Neuroscience, Atlanta</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000301 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000301">
-        <rdfs:label>Molecular Dynamics</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000302 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000302">
-        <rdfs:label>Motorola Life Sciences</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000303 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000303">
-        <rdfs:label>NIH</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000325 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000325">
-        <rdfs:label>PerkinElmer</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000351 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000351">
-        <rdfs:label>Raytest</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000357 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000357">
-        <rdfs:label>Research Genetics</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000366 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000366">
-        <rdfs:label>Rosetta Biosoftware</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000376 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000376">
-        <rdfs:label>SAS Institute Inc.</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000431 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000431">
-        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
-        <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
-        <efo:reason_for_obsolescence>Stanford University (SWO_0000431 and SWO_9000003). SWO_9000003 was retained, while SWO_0000431 became an instance of obsolete class. Please use SWO_9000003 instead.</efo:reason_for_obsolescence>
-        <rdfs:label>obsolete_Stanford University</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000433 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000433">
-        <rdfs:label>TIBCO Software Inc</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000436 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000436">
-        <rdfs:label>Technological Advances for Genomics and Clinics, France</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000439 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000439">
-        <rdfs:label>UC Irvine</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000440 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000440">
-        <rdfs:label>University Of California, Berkeley</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000443 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000443">
-        <rdfs:label>Walter and Eliza Hall Institute</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000492 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000492">
-        <rdfs:label>Cambridge Bluegnome</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000743 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000743">
-        <rdfs:label>Strand Life Sciences</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000063 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000063">
-        <rdfs:label xml:lang="en">FCS Data Standard Version 3.0</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000001 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000001">
-        <rdfs:label>Microsoft</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000002 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000002">
-        <rdfs:label>MathWorks</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000003 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000003">
-        <rdfs:label>Stanford University</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000004 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000004">
-        <rdfs:label>Omni</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000005 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000005">
-        <rdfs:label>PLT Scheme Inc</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000006 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000006">
-        <rdfs:label>MicroPro International</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000007 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000007">
-        <rdfs:label>JetBrains</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000008 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000008">
-        <rdfs:label>Free Software Foundation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000009 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000009">
-        <rdfs:label>Adobe Systems</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000010 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000010">
-        <dc:contributor>Andy Brown</dc:contributor>
-        <rdfs:comment>An undefined, or ill-defined, group of people.  May be used, for example, to denote software development as being done by &apos;the community&apos;, with contributions by many individuals, but no over-arching organisation.</rdfs:comment>
-        <rdfs:label>The Community</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000011 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000011">
-        <rdfs:label>University of New Hampshire</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000012 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000012">
-        <rdfs:label>The National Archives</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000013 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000013">
-        <rdfs:label>Eclipse Foundation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000014 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000014">
-        <rdfs:label>Dropbox</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000015 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000015">
-        <rdfs:label>Thompson Reuters</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000016 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000016">
-        <rdfs:label>OMII-UK</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000017 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000017">
-        <rdfs:label>Apple Inc.</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000019 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000019">
-        <rdfs:label>European Bioinformatics Institute</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000060 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000060">
-        <rdfs:label xml:lang="en">Drive5</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000061 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000061">
-        <rdfs:label xml:lang="en">Conway Institute UCD Dublin</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000062 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000062">
-        <rdfs:label xml:lang="en">Centre for Genomic Regulation (CRG) of Barcelona</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000063 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000063">
-        <rdfs:label xml:lang="en">IBM</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000064 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000064">
-        <dc:contributor xml:lang="en">Allyson Lister</dc:contributor>
-        <rdfs:comment xml:lang="en">AL 8.10.2019: References https://github.com/allysonlister/swo/issues/19</rdfs:comment>
-        <rdfs:label xml:lang="en">Uppsala Molekylmekaniska HB</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000065 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000065">
-        <rdfs:label xml:lang="en">UC Santa Cruz Computational Biology Group </rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000004 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000004">
-        <rdfs:label>Microsoft 2002 version</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000005 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000005">
-        <rdfs:label>Microsoft 2003 version</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000007 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000007">
-        <rdfs:label>Microsoft 2007 version</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000008 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000008">
-        <rdfs:label>Microsoft 2010 version</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000011 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000011">
-        <rdfs:label>Matlab R14</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000012 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000012">
-        <rdfs:label>Matlab R12</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000013 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000013">
-        <rdfs:label>R2011a</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000014 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000014">
-        <rdfs:label>Microsoft XP</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000015 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000015">
-        <rdfs:label>Excel 14</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000016 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000016">
-        <rdfs:label>Windows 5.1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000017 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000017">
-        <rdfs:label>3.5.1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000018 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000018">
-        <rdfs:label>Adobe Acrobat 10.1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000019 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000019">
-        <rdfs:label>1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000020 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000020">
-        <rdfs:label>3.0.1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000021 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000021">
-        <rdfs:label>1.6.9</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000022 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000022">
-        <rdfs:label>6.02</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000023 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000023">
-        <rdfs:label>Helios Service Release 2</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000024 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000024">
-        <rdfs:label>6.3.0</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000025 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000025">
-        <rdfs:label>2.0.0</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000027 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000027">
-        <dc:creator>Allyson Lister</dc:creator>
-        <rdfs:label xml:lang="en">BLAST+ version 2.2.26</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000028 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000028">
-        <dc:creator>Allyson Lister</dc:creator>
-        <rdfs:label xml:lang="en">ClustalW version 2.1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000029 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000029">
-        <dc:creator>Allyson Lister</dc:creator>
-        <rdfs:label xml:lang="en">ClustalX version 2.1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000030 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000030">
-        <dc:creator>Allyson Lister</dc:creator>
-        <rdfs:label xml:lang="en">Clustal Omega version 1.1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000031 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000031">
-        <dc:creator>Allyson Lister</dc:creator>
-        <rdfs:label xml:lang="en">MUSCLE version 3.8.31</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000032 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000032">
-        <rdfs:label xml:lang="en">CRG TCoffee version 9.02.r1228</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000033 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000033">
-        <rdfs:label xml:lang="en">Python version 2.6</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000034 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000034">
-        <rdfs:label xml:lang="en">Python version 2.7</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000036 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000036">
-        <rdfs:label xml:lang="en">7.2.0</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000037 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000037">
-        <rdfs:label xml:lang="en">Segway version 1.2</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/version/6.0 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/6.0">
-        <rdfs:label>Windows 6.0</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -12500,5 +11594,5 @@ For example, bagging of decision trees algorithm includes the specification of a
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
