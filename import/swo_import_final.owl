@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ebi.ac.uk/swo/swo.owl#"
-     xml:base="http://www.ebi.ac.uk/swo/swo.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/swo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/swo.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -12,7 +12,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:edamontology="http://edamontology.org#">
-    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/swo.owl">
         <dc:creator xml:lang="en">Allyson Lister</dc:creator>
         <dc:creator xml:lang="en">Andy Brown</dc:creator>
         <dc:creator xml:lang="en">Duncan Hull</dc:creator>
