@@ -15,7 +15,7 @@
                                     <http://purl.org/dc/terms/creator> "Tuan Amith and Cui Tao" ;
                                     <http://purl.org/dc/terms/description> "An ontology representing the model card structure" ;
                                     <http://purl.org/dc/terms/title> "Model Card Ontology" ;
-                                    <http://www.w3.org/2004/02/skos/core#note> "this version uses more defined class descriptions of the sections" .
+                                    <http://www.w3.org/2004/02/skos/core#note> "encoding of sample model card as an instance" .
 
 #################################################################
 #    Annotation properties
@@ -589,115 +589,16 @@ mco:model_card_report_section rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://sbmi.uth.edu/ontology/mco#mc1_consideration_info
-mco:mc1_consideration_info rdf:type owl:NamedIndividual ,
-                                    mco:Consideration_Information ;
-                           <http://purl.obolibrary.org/obo/BFO_0000051> mco:mc1_ethical_consideration ,
-                                                                        mco:mc1_trade_offs ,
-                                                                        mco:mc1_use_case ;
-                           mco:documentation "The potentially relevant factors include age, gender, history (e.g., prior bleeding, prior myocardial infarction), comorbidities and risk factors (diabetes mellites, smoking, congestive heart failure), as well as comedications (e.g., statins, beta-blockers)" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_ethical_consideration
-mco:mc1_ethical_consideration rdf:type owl:NamedIndividual ,
-                                       mco:Ethical_Consideration ;
-                              mco:documentation "Since the Cerner cohort is from the US hospitals, the generalizability to other countries or regions might need more data to validate" ;
-                              <http://purl.org/dc/elements/1.1/title> "Ethical Consideration" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_evaluation_data
-mco:mc1_evaluation_data rdf:type owl:NamedIndividual ,
-                                 mco:Evaluation_Data_Information ;
-                        mco:documentation "Cerner, test data split (20% out of the total selected cohort)" ;
-                        mco:slice "20%" ;
-                        <http://purl.org/dc/elements/1.1/title> "Evaluation Data" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_example_card
-mco:mc1_example_card rdf:type owl:NamedIndividual ,
-                              mco:Model_Card_Report ;
-                     <http://purl.obolibrary.org/obo/BFO_0000051> mco:mc1_consideration_info ,
-                                                                  mco:mc1_model_details ,
-                                                                  mco:mc1_model_parameters ,
-                                                                  mco:mc1_quantative_analysis ;
-                     <http://purl.obolibrary.org/obo/IAO_0000136> mco:mc1_rnn ;
-                     <http://purl.obolibrary.org/obo/IAO_0000116> "This is an example model card report" ;
-                     <http://purl.org/dc/elements/1.1/title> "Model Card- Adverse endpoints prediction for patients undergoing PCI" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_metrics
-mco:mc1_metrics rdf:type owl:NamedIndividual ,
-                         mco:Area_Under_the_Curve ,
-                         mco:Percision-Recall_Curve ;
-                mco:documentation "Evaluation metrics include the area under the receiver operating characteristic curve (AUC) and Precision-Recall Curve (PRC)" ;
-                <http://purl.org/dc/elements/1.1/title> "Performance Metrics" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_model_details
-mco:mc1_model_details rdf:type owl:NamedIndividual ,
-                               mco:Model_Detail ;
-                      <http://purl.obolibrary.org/obo/BFO_0000051> mco:mc1_owner_info ;
-                      mco:name_text "Untitled" ;
-                      mco:overview "Binary classification for adverse endpoints after coronary artery stent implantation" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_model_parameters
-mco:mc1_model_parameters rdf:type owl:NamedIndividual ,
-                                  mco:Model_Parameter ;
-                         <http://purl.obolibrary.org/obo/BFO_0000051> mco:mc1_evaluation_data ,
-                                                                      mco:mc1_training_data .
-
-
 ###  http://sbmi.uth.edu/ontology/mco#mc1_organization
 mco:mc1_organization rdf:type owl:NamedIndividual ,
                               <http://www.w3.org/ns/prov#Organization> ;
                      rdfs:label "University of Texas Health Science Center at Houston" .
 
 
-###  http://sbmi.uth.edu/ontology/mco#mc1_owner_info
-mco:mc1_owner_info rdf:type owl:NamedIndividual ,
-                            mco:Owner_Information ;
-                   <http://purl.obolibrary.org/obo/IAO_0000136> mco:mc1_organization ;
-                   mco:contact_text "email@sbmi.uth.edu" ;
-                   mco:name_text "University of Texas Health Science Center at Houston" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_quantative_analysis
-mco:mc1_quantative_analysis rdf:type owl:NamedIndividual ,
-                                     mco:Quantatitive_Analysis ;
-                            <http://purl.obolibrary.org/obo/BFO_0000051> mco:mc1_evaluation_data ,
-                                                                         mco:mc1_metrics ,
-                                                                         mco:mc1_training_data ;
-                            <http://purl.org/dc/elements/1.1/title> "Quantative Analysis" .
-
-
 ###  http://sbmi.uth.edu/ontology/mco#mc1_rnn
 mco:mc1_rnn rdf:type owl:NamedIndividual ,
                      <http://www.ebi.ac.uk/swo/SWO_0000633> ;
             rdfs:label "Recurrent neural network" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_trade_offs
-mco:mc1_trade_offs rdf:type owl:NamedIndividual ,
-                            mco:Trade-off_Information ;
-                   mco:documentation "Data incompleteness and missingness are also evident in EHRs data, which might cause serious prediction bias particularly when important information is missing. Try to select the higher quality dataset and multimodality data to make an well-informed prediction." ,
-                                     "Imbalance distribution of case and control is common in the real-world data, which might bring negative impacts for prediction performance. Could apply some data sampling strategies to make the data more balanced" ;
-                   <http://purl.org/dc/elements/1.1/title> "Caveats and Recommendations" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_training_data
-mco:mc1_training_data rdf:type owl:NamedIndividual ,
-                               mco:Training_Data_Information ;
-                      mco:documentation "Cerner, training and validation data split (70% and 10% respectively, out of the total selected cohort)" ;
-                      mco:slice "10%" ,
-                                "70%" ;
-                      <http://purl.org/dc/elements/1.1/title> "Training and Validation Data" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#mc1_use_case
-mco:mc1_use_case rdf:type owl:NamedIndividual ,
-                          mco:Use_Case_Information ;
-                 mco:documentation "Intended to be used for disease risk prediction and treatment optimization using longitudinal sequence data, e.g., electronic health records (EHRs)" .
 
 
 ###  http://sbmi.uth.edu/ontology/mco#mc2_Jillin_University
@@ -746,7 +647,10 @@ mco:mc2_example_card rdf:type owl:NamedIndividual ,
                                                                   mco:mc2_model_parameters ,
                                                                   mco:mc2_quantative_analysis ;
                      <http://purl.obolibrary.org/obo/IAO_0000136> mco:mc2_algrothim ;
-                     <http://purl.org/dc/elements/1.1/title> "Model Card: Incorporating social network information to predict HIV status" .
+                     <http://purl.obolibrary.org/obo/IAO_0000116> "This is an example of model card report" ;
+                     <http://purl.org/dc/elements/1.1/title> "Model Card: Incorporating social network information to predict HIV status" ;
+                     <http://www.geneontology.org/formats/oboInOwl#created_by> "Evan Yu" ;
+                     <http://www.geneontology.org/formats/oboInOwl#creation_date> "January 26, 2022" .
 
 
 ###  http://sbmi.uth.edu/ontology/mco#mc2_limitations
@@ -761,6 +665,7 @@ mco:mc2_model_details rdf:type owl:NamedIndividual ,
                       <http://purl.obolibrary.org/obo/BFO_0000051> mco:mc2_owner_info_ju ,
                                                                    mco:mc2_owner_info_uc ,
                                                                    mco:mc2_owner_info_uth ;
+                      mco:overview "Detection of previously unknown HIV infections in the young MSM (Men who have Sex with Men) population (16-29) in Houston, Texas" ;
                       <http://purl.org/dc/elements/1.1/title> "Model Details" .
 
 
