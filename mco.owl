@@ -1,588 +1,894 @@
-@prefix : <http://sbmi.uth.edu/ontology/mco#> .
-@prefix mco: <http://sbmi.uth.edu/ontology/mco#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://sbmi.uth.edu/ontology/mco> .
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://sbmi.uth.edu/ontology/mco"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://sbmi.uth.edu/ontology/mco">
+    <Prefix name="" IRI="http://sbmi.uth.edu/ontology/mco#"/>
+    <Prefix name="mco" IRI="http://sbmi.uth.edu/ontology/mco#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/swo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Import>
+    <Import>http://www.w3.org/2004/02/skos/core</Import>
+    <Import>http://www.w3.org/ns/prov-o-20130430</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Tuan Amith and Cui Tao</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>An ontology representing the model card structure</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Model Card Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <Literal>this version uses more defined class descriptions of the sections</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000301"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000320"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accuracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area_Under_the_Curve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citation_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consideration_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethical_Consideration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaluation_Data_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#F1-Score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#False_Discovery_Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#False_Ommission_Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#False_Positive_Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Format_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graphic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graphic_Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Input_Format_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#License_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Limitation_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitigation_Strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model_Architecture_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model_Card_Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model_Detail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model_Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Out_of_Scope_Use_Case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Output_Format_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Owner_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Percision-Recall_Curve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performance_Metric_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personally_Identifable_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quantatitive_Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reference_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensitive_Data_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trade-off_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Training_Data_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Use_Case_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Version_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_card_report_section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#model_card_has_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#model_card_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ebi.ac.uk/swo/SWO_0004000"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#citation_text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contact_text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#custom_text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#documentation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#model_card_text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name_text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#overview"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#performance_metric_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensitive_data"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#slice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trade-off-text"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#image"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov-o-20120312"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov-o"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:List"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov-o#"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <Class IRI="#Graphic"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Accuracy"/>
+        <Class IRI="#Performance_Metric_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area_Under_the_Curve"/>
+        <Class IRI="#Performance_Metric_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000301"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#documentation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#overview"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consideration_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consideration_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Ethical_Consideration"/>
+                <Class IRI="#Limitation_Information"/>
+                <Class IRI="#Trade-off_Information"/>
+                <Class IRI="#Use_Case_Information"/>
+                <Class IRI="#User_Information"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consideration_Information"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="#Model_Card_Report"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset_Information"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <Class IRI="#Model_Parameter"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <Class IRI="#Quantatitive_Analysis"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000622"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#Graphic_Collection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ethical_Consideration"/>
+        <Class IRI="#Risk_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaluation_Data_Information"/>
+        <Class IRI="#Dataset_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#F1-Score"/>
+        <Class IRI="#Performance_Metric_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#False_Discovery_Rate"/>
+        <Class IRI="#Performance_Metric_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#False_Ommission_Rate"/>
+        <Class IRI="#Performance_Metric_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#False_Positive_Rate"/>
+        <Class IRI="#Performance_Metric_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Format_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Format_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graphic_Collection"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graphic_Collection"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graphic_Collection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000622"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Input_Format_Information"/>
+        <Class IRI="#Format_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#License_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#License_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#License_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#custom_text"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#License_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#documentation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#License_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#overview"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Limitation_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigation_Strategy"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigation_Strategy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="#Risk_Information"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Architecture_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Architecture_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Card_Report"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000088"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Card_Report"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Consideration_Information"/>
+                <Class IRI="#Model_Detail"/>
+                <Class IRI="#Model_Parameter"/>
+                <Class IRI="#Quantatitive_Analysis"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Card_Report"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Detail"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Detail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Citation_Information"/>
+                <Class IRI="#License_Information"/>
+                <Class IRI="#Model_Architecture_Information"/>
+                <Class IRI="#Owner_Information"/>
+                <Class IRI="#Reference_Information"/>
+                <Class IRI="#Version_Information"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Detail"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#documentation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Detail"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#overview"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Parameter"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Parameter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Dataset_Information"/>
+                <Class IRI="#Input_Format_Information"/>
+                <Class IRI="#Model_Architecture_Information"/>
+                <Class IRI="#Output_Format_Information"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Out_of_Scope_Use_Case"/>
+        <Class IRI="#Use_Case_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Output_Format_Information"/>
+        <Class IRI="#Format_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+                <Class IRI="http://www.w3.org/ns/prov#Person"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#contact_text"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#documentation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#name_text"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#overview"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Percision-Recall_Curve"/>
+        <Class IRI="#Performance_Metric_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance_Metric_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance_Metric_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#performance_metric_value"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance_Metric_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#slice"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personally_Identifable_Information"/>
+        <Class IRI="#Sensitive_Data_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quantatitive_Analysis"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quantatitive_Analysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000622"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quantatitive_Analysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#Graphic_Collection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quantatitive_Analysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Dataset_Information"/>
+                <Class IRI="#Graphic_Collection"/>
+                <Class IRI="#Performance_Metric_Information"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reference_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reference_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reference_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#documentation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reference_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#overview"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risk_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitive_Data_Information"/>
+        <Class IRI="#Dataset_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitive_Data_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#sensitive_data"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trade-off_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Training_Data_Information"/>
+        <Class IRI="#Dataset_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Use_Case_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Version_Information"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Version_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000129"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Version_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#documentation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Version_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#overview"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_card_report_section"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#model_card_has_part"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#model_card_part_of"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#model_card_has_part"/>
+        <ObjectProperty IRI="#model_card_part_of"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#model_card_has_part"/>
+        <ObjectUnionOf>
+            <Class IRI="#Model_Card_Report"/>
+            <Class IRI="#model_card_report_section"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#model_card_part_of"/>
+        <Class IRI="#model_card_report_section"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#model_card_has_part"/>
+        <Class IRI="#model_card_report_section"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#model_card_part_of"/>
+        <ObjectUnionOf>
+            <Class IRI="#Model_Card_Report"/>
+            <Class IRI="#model_card_report_section"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#citation_text"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#contact_text"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#custom_text"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#documentation"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name_text"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#overview"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#performance_metric_value"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sensitive_data"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#trade-off-text"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#overview"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#performance_metric_value"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#trade-off-text"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensitive_data"/>
+        <Class IRI="#Sensitive_Data_Information"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#contact_text"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#model_card_text"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name_text"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#performance_metric_value"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sensitive_data"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#slice"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#trade-off-text"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#Area_Under_the_Curve</IRI>
+        <Literal>AUC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#Consideration_Information</IRI>
+        <Literal>Factors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <IRI>#Quantatitive_Analysis</IRI>
+        <Literal>need to connect evaluation data information and training data information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <IRI>#Quantatitive_Analysis</IRI>
+        <Literal>should their be a specified graphic collection for Quantative Analysis?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#Trade-off_Information</IRI>
+        <Literal>Caveats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#Trade-off_Information</IRI>
+        <Literal>Recommendations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#Use_Case_Information</IRI>
+        <Literal>Intended Use</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#User_Information</IRI>
+        <Literal>target user for the model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#User_Information</IRI>
+        <Literal>Intended User Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#model_card_report_section</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ebi.ac.uk/swo/SWO_0004000</IRI>
+        <Literal>has version</Literal>
+    </AnnotationAssertion>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="#image"/>
+        <IRI>#Graphic</IRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-<http://sbmi.uth.edu/ontology/mco> rdf:type owl:Ontology ;
-                                    owl:imports <http://purl.obolibrary.org/obo/swo.owl> ,
-                                                <http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl> ,
-                                                <http://www.w3.org/2004/02/skos/core> ,
-                                                <http://www.w3.org/ns/prov-o-20130430> ;
-                                    <http://purl.org/dc/terms/creator> "Tuan Amith and Cui Tao" ;
-                                    <http://purl.org/dc/terms/description> "An ontology representing the model card structure" ;
-                                    <http://purl.org/dc/terms/title> "Model Card Ontology" ;
-                                    <http://www.w3.org/2004/02/skos/core#note> "this version uses more defined class descriptions of the sections" .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://sbmi.uth.edu/ontology/mco#image
-mco:image rdf:type owl:AnnotationProperty ;
-          rdfs:domain mco:Graphic .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://purl.obolibrary.org/obo/BFO_0000050
-<http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000136
-<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty .
-
-
-###  http://sbmi.uth.edu/ontology/mco#model_card_has_part
-mco:model_card_has_part rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                        owl:inverseOf mco:model_card_part_of ;
-                        rdfs:domain [ rdf:type owl:Class ;
-                                      owl:unionOf ( mco:Model_Card_Report
-                                                    mco:model_card_report_section
-                                                  )
-                                    ] ;
-                        rdfs:range mco:model_card_report_section .
-
-
-###  http://sbmi.uth.edu/ontology/mco#model_card_part_of
-mco:model_card_part_of rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                       rdfs:domain mco:model_card_report_section ;
-                       rdfs:range [ rdf:type owl:Class ;
-                                    owl:unionOf ( mco:Model_Card_Report
-                                                  mco:model_card_report_section
-                                                )
-                                  ] .
-
-
-###  http://www.ebi.ac.uk/swo/SWO_0004000
-<http://www.ebi.ac.uk/swo/SWO_0004000> rdf:type owl:ObjectProperty ;
-                                       rdfs:label "has version" .
-
-
-###  http://www.ebi.ac.uk/swo/SWO_9001002
-<http://www.ebi.ac.uk/swo/SWO_9001002> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://sbmi.uth.edu/ontology/mco#citation_text
-mco:citation_text rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mco:model_card_text .
-
-
-###  http://sbmi.uth.edu/ontology/mco#contact_text
-mco:contact_text rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf mco:model_card_text ;
-                 rdfs:range rdfs:Literal .
-
-
-###  http://sbmi.uth.edu/ontology/mco#custom_text
-mco:custom_text rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf mco:model_card_text .
-
-
-###  http://sbmi.uth.edu/ontology/mco#documentation
-mco:documentation rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mco:model_card_text .
-
-
-###  http://sbmi.uth.edu/ontology/mco#model_card_text
-mco:model_card_text rdf:type owl:DatatypeProperty ;
-                    rdfs:range rdfs:Literal .
-
-
-###  http://sbmi.uth.edu/ontology/mco#name_text
-mco:name_text rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf mco:model_card_text ;
-              rdfs:range rdfs:Literal .
-
-
-###  http://sbmi.uth.edu/ontology/mco#overview
-mco:overview rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf mco:model_card_text ;
-             rdf:type owl:FunctionalProperty .
-
-
-###  http://sbmi.uth.edu/ontology/mco#performance_metric_value
-mco:performance_metric_value rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf mco:model_card_text ;
-                             rdf:type owl:FunctionalProperty ;
-                             rdfs:range xsd:decimal .
-
-
-###  http://sbmi.uth.edu/ontology/mco#sensitive_data
-mco:sensitive_data rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf mco:model_card_text ;
-                   rdfs:domain mco:Sensitive_Data_Information ;
-                   rdfs:range rdfs:Literal .
-
-
-###  http://sbmi.uth.edu/ontology/mco#slice
-mco:slice rdf:type owl:DatatypeProperty ;
-          rdfs:range rdfs:Literal .
-
-
-###  http://sbmi.uth.edu/ontology/mco#trade-off-text
-mco:trade-off-text rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf mco:model_card_text ;
-                   rdf:type owl:FunctionalProperty ;
-                   rdfs:range rdfs:Literal .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://purl.obolibrary.org/obo/IAO_0000038
-<http://purl.obolibrary.org/obo/IAO_0000038> owl:equivalentClass mco:Graphic .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000301
-<http://purl.obolibrary.org/obo/IAO_0000301> rdf:type owl:Class .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000310
-<http://purl.obolibrary.org/obo/IAO_0000310> rdf:type owl:Class .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000314
-<http://purl.obolibrary.org/obo/IAO_0000314> rdf:type owl:Class .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000320
-<http://purl.obolibrary.org/obo/IAO_0000320> rdf:type owl:Class .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Accuracy
-mco:Accuracy rdf:type owl:Class ;
-             rdfs:subClassOf mco:Performance_Metric_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Area_Under_the_Curve
-mco:Area_Under_the_Curve rdf:type owl:Class ;
-                         rdfs:subClassOf mco:Performance_Metric_Information ;
-                         <http://www.w3.org/2004/02/skos/core#altLabel> "AUC" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Citation_Information
-mco:Citation_Information rdf:type owl:Class ;
-                         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000301>
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty mco:documentation ;
-                                           owl:someValuesFrom rdfs:Literal
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty mco:overview ;
-                                           owl:someValuesFrom rdfs:Literal
-                                         ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Consideration_Information
-mco:Consideration_Information rdf:type owl:Class ;
-                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                owl:someValuesFrom [ owl:intersectionOf ( mco:Ethical_Consideration
-                                                                                          mco:Limitation_Information
-                                                                                          mco:Trade-off_Information
-                                                                                          mco:Use_Case_Information
-                                                                                          mco:User_Information
-                                                                                        ) ;
-                                                                     rdf:type owl:Class
-                                                                   ]
-                                              ] ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                                owl:allValuesFrom mco:Model_Card_Report
-                                              ] ;
-                              <http://www.w3.org/2004/02/skos/core#altLabel> "Factors" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Dataset_Information
-mco:Dataset_Information rdf:type owl:Class ;
-                        rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                                                 owl:someValuesFrom mco:Model_Parameter
-                                                               ]
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                                                 owl:someValuesFrom mco:Quantatitive_Analysis
-                                                               ]
-                                                             ) ;
-                                          rdf:type owl:Class
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000622>
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                          owl:someValuesFrom mco:Graphic_Collection
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000100>
-                                        ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Ethical_Consideration
-mco:Ethical_Consideration rdf:type owl:Class ;
-                          rdfs:subClassOf mco:Risk_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Evaluation_Data_Information
-mco:Evaluation_Data_Information rdf:type owl:Class ;
-                                rdfs:subClassOf mco:Dataset_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#F1-Score
-mco:F1-Score rdf:type owl:Class ;
-             rdfs:subClassOf mco:Performance_Metric_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#False_Discovery_Rate
-mco:False_Discovery_Rate rdf:type owl:Class ;
-                         rdfs:subClassOf mco:Performance_Metric_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#False_Ommission_Rate
-mco:False_Ommission_Rate rdf:type owl:Class ;
-                         rdfs:subClassOf mco:Performance_Metric_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#False_Positive_Rate
-mco:False_Positive_Rate rdf:type owl:Class ;
-                        rdfs:subClassOf mco:Performance_Metric_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Format_Information
-mco:Format_Information rdf:type owl:Class ;
-                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000098>
-                                       ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Graphic
-mco:Graphic rdf:type owl:Class .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Graphic_Collection
-mco:Graphic_Collection rdf:type owl:Class ;
-                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                       <http://www.w3.org/2004/02/skos/core#Collection> ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000622>
-                                       ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Input_Format_Information
-mco:Input_Format_Information rdf:type owl:Class ;
-                             rdfs:subClassOf mco:Format_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#License_Information
-mco:License_Information rdf:type owl:Class ;
-                        rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                          owl:someValuesFrom <http://www.ebi.ac.uk/swo/SWO_0000002>
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty mco:custom_text ;
-                                          owl:someValuesFrom xsd:string
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty mco:documentation ;
-                                          owl:someValuesFrom rdfs:Literal
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty mco:overview ;
-                                          owl:someValuesFrom rdfs:Literal
-                                        ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Limitation_Information
-mco:Limitation_Information rdf:type owl:Class ;
-                           rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Mitigation_Strategy
-mco:Mitigation_Strategy rdf:type owl:Class ;
-                        rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                          owl:someValuesFrom mco:Risk_Information
-                                        ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Model_Architecture_Information
-mco:Model_Architecture_Information rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                                     owl:someValuesFrom <http://www.ebi.ac.uk/swo/SWO_0000001>
-                                                   ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Model_Card_Report
-mco:Model_Card_Report rdf:type owl:Class ;
-                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000088> ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                        owl:someValuesFrom [ owl:intersectionOf ( mco:Consideration_Information
-                                                                                  mco:Model_Detail
-                                                                                  mco:Model_Parameter
-                                                                                  mco:Quantatitive_Analysis
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ]
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                        owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000064>
-                                      ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Model_Detail
-mco:Model_Detail rdf:type owl:Class ;
-                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                   owl:someValuesFrom [ owl:intersectionOf ( mco:Citation_Information
-                                                                             mco:License_Information
-                                                                             mco:Model_Architecture_Information
-                                                                             mco:Owner_Information
-                                                                             mco:Reference_Information
-                                                                             mco:Version_Information
-                                                                           ) ;
-                                                        rdf:type owl:Class
-                                                      ]
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty mco:documentation ;
-                                   owl:someValuesFrom rdfs:Literal
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty mco:overview ;
-                                   owl:someValuesFrom rdfs:Literal
-                                 ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Model_Parameter
-mco:Model_Parameter rdf:type owl:Class ;
-                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                      owl:someValuesFrom [ owl:intersectionOf ( mco:Dataset_Information
-                                                                                mco:Input_Format_Information
-                                                                                mco:Model_Architecture_Information
-                                                                                mco:Output_Format_Information
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ]
-                                    ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Out_of_Scope_Use_Case
-mco:Out_of_Scope_Use_Case rdf:type owl:Class ;
-                          rdfs:subClassOf mco:Use_Case_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Output_Format_Information
-mco:Output_Format_Information rdf:type owl:Class ;
-                              rdfs:subClassOf mco:Format_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Owner_Information
-mco:Owner_Information rdf:type owl:Class ;
-                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                        owl:someValuesFrom [ rdf:type owl:Class ;
-                                                             owl:unionOf ( <http://www.w3.org/ns/prov#Organization>
-                                                                           <http://www.w3.org/ns/prov#Person>
-                                                                         )
-                                                           ]
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty mco:contact_text ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty mco:documentation ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty mco:name_text ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty mco:overview ;
-                                        owl:someValuesFrom rdfs:Literal
-                                      ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Percision-Recall_Curve
-mco:Percision-Recall_Curve rdf:type owl:Class ;
-                           rdfs:subClassOf mco:Performance_Metric_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Performance_Metric_Information
-mco:Performance_Metric_Information rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty mco:performance_metric_value ;
-                                                     owl:someValuesFrom xsd:decimal
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty mco:slice ;
-                                                     owl:someValuesFrom rdfs:Literal
-                                                   ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Personally_Identifable_Information
-mco:Personally_Identifable_Information rdf:type owl:Class ;
-                                       rdfs:subClassOf mco:Sensitive_Data_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Quantatitive_Analysis
-mco:Quantatitive_Analysis rdf:type owl:Class ;
-                          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000622>
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                            owl:someValuesFrom mco:Graphic_Collection
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                            owl:someValuesFrom [ owl:intersectionOf ( mco:Dataset_Information
-                                                                                      mco:Graphic_Collection
-                                                                                      mco:Performance_Metric_Information
-                                                                                    ) ;
-                                                                 rdf:type owl:Class
-                                                               ]
-                                          ] ;
-                          <http://www.w3.org/2004/02/skos/core#note> "need to connect evaluation data information and training data information" ,
-                                                                     "should their be a specified graphic collection for Quantative Analysis?" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Reference_Information
-mco:Reference_Information rdf:type owl:Class ;
-                          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
-                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000310>
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty mco:documentation ;
-                                            owl:someValuesFrom rdfs:Literal
-                                          ] ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty mco:overview ;
-                                            owl:someValuesFrom rdfs:Literal
-                                          ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Risk_Information
-mco:Risk_Information rdf:type owl:Class ;
-                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Sensitive_Data_Information
-mco:Sensitive_Data_Information rdf:type owl:Class ;
-                               rdfs:subClassOf mco:Dataset_Information ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty mco:sensitive_data ;
-                                                 owl:someValuesFrom rdfs:Literal
-                                               ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Trade-off_Information
-mco:Trade-off_Information rdf:type owl:Class ;
-                          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ;
-                          <http://www.w3.org/2004/02/skos/core#altLabel> "Caveats" ,
-                                                                         "Recommendations" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Training_Data_Information
-mco:Training_Data_Information rdf:type owl:Class ;
-                              rdfs:subClassOf mco:Dataset_Information .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Use_Case_Information
-mco:Use_Case_Information rdf:type owl:Class ;
-                         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ;
-                         <http://www.w3.org/2004/02/skos/core#altLabel> "Intended Use" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#User_Information
-mco:User_Information rdf:type owl:Class ;
-                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ;
-                     rdfs:comment "target user for the model" ;
-                     <http://www.w3.org/2004/02/skos/core#altLabel> "Intended User Information" .
-
-
-###  http://sbmi.uth.edu/ontology/mco#Version_Information
-mco:Version_Information rdf:type owl:Class ;
-                        rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000129>
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty mco:documentation ;
-                                          owl:someValuesFrom rdfs:Literal
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty mco:overview ;
-                                          owl:someValuesFrom rdfs:Literal
-                                        ] .
-
-
-###  http://sbmi.uth.edu/ontology/mco#model_card_report_section
-mco:model_card_report_section rdf:type owl:Class ;
-                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000314> ;
-                              owl:deprecated "true"^^xsd:boolean .
-
-
-###  http://www.ebi.ac.uk/swo/SWO_0000002
-<http://www.ebi.ac.uk/swo/SWO_0000002> rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> .
-
-
-###  http://www.w3.org/2004/02/skos/core#Collection
-<http://www.w3.org/2004/02/skos/core#Collection> rdf:type owl:Class .
-
-
-###  http://xmlns.com/foaf/0.1/Agent
-<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
