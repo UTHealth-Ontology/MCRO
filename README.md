@@ -4,7 +4,7 @@ An OWL2-encoded ontology modeling the model card report for machine learning mod
 
 This ontology utilizes: 
 * Information Artifact Ontology, 
-* Software Ontology (only a subset, see [SWO import](https://github.com/UTHealth-Ontology/MCO/tree/main/import for details).)
+* Software Ontology (only a subset, see [SWO import](https://github.com/UTHealth-Ontology/MCO/tree/main/import) for details.)
 * Provenance Ontology
 * Simple Knowledge Organization System
 
