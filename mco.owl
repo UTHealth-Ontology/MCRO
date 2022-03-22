@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://sbmi.uth.edu/ontology/mco">
-    <Prefix name="" IRI="http://sbmi.uth.edu/ontology/mco#"/>
+    <Prefix name="" IRI="http://sbmi.uth.edu/ontology/mco"/>
     <Prefix name="mco" IRI="http://sbmi.uth.edu/ontology/mco#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -160,6 +160,9 @@
         <Class IRI="#model_card_report_section"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="rdf:List"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
     </Declaration>
     <Declaration>
@@ -170,12 +173,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#model_card_has_part"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#model_card_part_of"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ebi.ac.uk/swo/SWO_0004000"/>
@@ -217,6 +214,18 @@
         <DataProperty IRI="#trade-off-text"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov-o"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov-o-20120312"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov-o#"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
@@ -224,21 +233,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#image"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov-o-20120312"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov-o"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="rdf:List"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov-o#"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -716,40 +710,6 @@
         <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000002"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#model_card_has_part"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#model_card_part_of"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#model_card_has_part"/>
-        <ObjectProperty IRI="#model_card_part_of"/>
-    </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#model_card_has_part"/>
-        <ObjectUnionOf>
-            <Class IRI="#Model_Card_Report"/>
-            <Class IRI="#model_card_report_section"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#model_card_part_of"/>
-        <Class IRI="#model_card_report_section"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#model_card_has_part"/>
-        <Class IRI="#model_card_report_section"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#model_card_part_of"/>
-        <ObjectUnionOf>
-            <Class IRI="#Model_Card_Report"/>
-            <Class IRI="#model_card_report_section"/>
-        </ObjectUnionOf>
-    </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#citation_text"/>
         <DataProperty IRI="#model_card_text"/>
