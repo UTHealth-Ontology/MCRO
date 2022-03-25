@@ -8,7 +8,7 @@
 @base <http://sbmi.uth.edu/ontology/mco> .
 
 <http://sbmi.uth.edu/ontology/mco> rdf:type owl:Ontology ;
-                                    owl:imports <http://purl.obolibrary.org/obo/swo.owl> ,
+                                    owl:imports <https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl> ,
                                                 <http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl> ,
                                                 <http://www.w3.org/2004/02/skos/core> ,
                                                 <http://www.w3.org/ns/prov-o-20130430> ;
