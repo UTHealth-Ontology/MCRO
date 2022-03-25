@@ -8,10 +8,10 @@
 @base <http://sbmi.uth.edu/ontology/mco> .
 
 <http://sbmi.uth.edu/ontology/mco> rdf:type owl:Ontology ;
-                                    owl:imports <https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl> ,
-                                                <http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl> ,
+                                    owl:imports <http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl> ,
                                                 <http://www.w3.org/2004/02/skos/core> ,
-                                                <http://www.w3.org/ns/prov-o-20130430> ;
+                                                <http://www.w3.org/ns/prov-o-20130430> ,
+                                                <https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl> ;
                                     <http://purl.org/dc/terms/creator> "Tuan Amith and Cui Tao" ;
                                     <http://purl.org/dc/terms/description> "An ontology representing the model card structure" ;
                                     <http://purl.org/dc/terms/title> "Model Card Ontology" ;
@@ -192,10 +192,6 @@ mco:Consideration_Information rdf:type owl:Class ;
                                                                                         ) ;
                                                                      rdf:type owl:Class
                                                                    ]
-                                              ] ,
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                                owl:allValuesFrom mco:Model_Card_Report
                                               ] ;
                               <http://www.w3.org/2004/02/skos/core#altLabel> "Factors" .
 
@@ -545,7 +541,8 @@ mco:Version_Information rdf:type owl:Class ;
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty mco:overview ;
                                           owl:someValuesFrom rdfs:Literal
-                                        ] .
+                                        ] ;
+                        rdfs:comment "Content section for version information"^^rdfs:Literal .
 
 
 ###  http://sbmi.uth.edu/ontology/mco#model_card_report_section
