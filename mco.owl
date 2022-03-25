@@ -13,7 +13,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.obolibrary.org/obo/swo.owl</Import>
+    <Import>https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl</Import>
     <Import>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Import>
     <Import>http://www.w3.org/2004/02/skos/core</Import>
     <Import>http://www.w3.org/ns/prov-o-20130430</Import>
@@ -287,13 +287,6 @@
                 <Class IRI="#User_Information"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Consideration_Information"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="#Model_Card_Report"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dataset_Information"/>
@@ -831,6 +824,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#User_Information</IRI>
         <Literal>Intended User Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Version_Information</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Content section for version information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
