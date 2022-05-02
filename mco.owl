@@ -13,10 +13,10 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl</Import>
     <Import>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Import>
     <Import>http://www.w3.org/2004/02/skos/core</Import>
     <Import>http://www.w3.org/ns/prov-o-20130430</Import>
+    <Import>https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
         <Literal>Tuan Amith and Cui Tao</Literal>
@@ -28,10 +28,6 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
         <Literal>Model Card Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <Literal>this version uses more defined class descriptions of the sections</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000301"/>
@@ -130,6 +126,12 @@
         <Class IRI="#Personally_Identifable_Information"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Primary_Intended_Use_Case_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primary_Intended_User_Information"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Quantatitive_Analysis"/>
     </Declaration>
     <Declaration>
@@ -140,6 +142,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Sensitive_Data_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Synthetic_Evaluation_Data_Information"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Trade-off_Information"/>
@@ -184,6 +189,9 @@
         <DataProperty IRI="#citation_text"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#confidence_interval"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#contact_text"/>
     </Declaration>
     <Declaration>
@@ -209,6 +217,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#slice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#threshold"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#trade-off-text"/>
@@ -435,6 +446,13 @@
         <Class IRI="#Model_Architecture_Information"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model_Architecture_Information"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -570,6 +588,13 @@
     <SubClassOf>
         <Class IRI="#Performance_Metric_Information"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="#confidence_interval"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance_Metric_Information"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="#performance_metric_value"/>
             <Datatype abbreviatedIRI="xsd:decimal"/>
         </DataSomeValuesFrom>
@@ -582,8 +607,23 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Performance_Metric_Information"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#threshold"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Personally_Identifable_Information"/>
         <Class IRI="#Sensitive_Data_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primary_Intended_Use_Case_Information"/>
+        <Class IRI="#Use_Case_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primary_Intended_User_Information"/>
+        <Class IRI="#User_Information"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Quantatitive_Analysis"/>
@@ -655,6 +695,10 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Synthetic_Evaluation_Data_Information"/>
+        <Class IRI="#Evaluation_Data_Information"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Trade-off_Information"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
     </SubClassOf>
@@ -708,6 +752,10 @@
         <DataProperty IRI="#model_card_text"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#confidence_interval"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#contact_text"/>
         <DataProperty IRI="#model_card_text"/>
     </SubDataPropertyOf>
@@ -733,6 +781,14 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#sensitive_data"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#slice"/>
+        <DataProperty IRI="#model_card_text"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#threshold"/>
         <DataProperty IRI="#model_card_text"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -781,9 +837,34 @@
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Accuracy</IRI>
+        <Literal>content in this section should describe &quot;is how close or far off a given set of measurements (observations or readings) are to their true value&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Accuracy</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Accuracy_and_precision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Area_Under_the_Curve</IRI>
+        <Literal>content pertaining to the area under the ROC curve.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#Area_Under_the_Curve</IRI>
         <Literal>AUC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Citation_Information</IRI>
+        <Literal>information relating to the citation for the targetted model. This is part of the model details component of the model card report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Consideration_Information</IRI>
+        <Literal>This section pertains to &quot;Factors&quot; of the model card report by Mitchell et al., 2019. The considerations section includes qualitative information about your model, including some analysis of its risks and limitations. As such, this section usually requires careful consideration, and conversations with many relevant  stakeholders, including other model developers, dataset producers, and downstream users likely to interact with your model, or be affected by its outputs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -791,14 +872,261 @@
         <Literal>Factors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Dataset_Information</IRI>
+        <Literal>Information about the data that was used to develop the model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Ethical_Consideration</IRI>
+        <Literal>content information that is a type of risk information that is specific to ethical consideration if using the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Evaluation_Data_Information</IRI>
+        <Literal>&quot;Evaluation datasets should include datasets that are publicly available for third-party use. These could be existing datasets or new ones provided alongside the model card analyses to enable further benchmarking... the evaluation datasets should not only be representative of the model’s typical use cases but also anticipated test scenarios and challenging cases.&quot;
+
+Details on the dataset(s) used for the quantitative analyses in the card. 
+- Datasets 
+- Motivation 
+- Preprocessing&quot;
+
+(Mitchell et al., 2019)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Evaluation_Data_Information</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#F1-Score</IRI>
+        <Literal>The F1 score is the harmonic mean of the precision and recall.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#F1-Score</IRI>
+        <Literal>https://en.wikipedia.org/wiki/F-score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#False_Discovery_Rate</IRI>
+        <Literal>&quot;The false discovery rate (FDR) is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons. FDR-controlling procedures are designed to control the FDR, which is the expected proportion of &quot;discoveries&quot; (rejected null hypotheses) that are false (incorrect rejections of the null)&quot;. quivalently, the FDR is the expected ratio of the number of false positive classifications (false discoveries) to the total number of positive classifications (rejections of the null). The total number of rejections of the null include both the number of false positives (FP) and true positives (TP). Simply put, FDR = FP / (FP + TP). FDR-controlling procedures provide less stringent control of Type I errors compared to familywise error rate (FWER) controlling procedures (such as the Bonferroni correction), which control the probability of at least one Type I error. Thus, FDR-controlling procedures have greater power, at the cost of increased numbers of Type I errors.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#False_Discovery_Rate</IRI>
+        <Literal>https://en.wikipedia.org/wiki/False_discovery_rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#False_Ommission_Rate</IRI>
+        <Literal>FOR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#False_Positive_Rate</IRI>
+        <Literal>&quot;A false positive error, or false positive, is a result that indicates a given condition exists when it does not. For example, a pregnancy test which indicates a woman is pregnant when she is not, or the conviction of an innocent person. A false positive error is a type I error where the test is checking a single condition, and wrongly gives an affirmative (positive) decision.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#False_Positive_Rate</IRI>
+        <Literal>https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Format_Information</IRI>
+        <Literal>content summarizing the input and output data format for the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Graphic_Collection</IRI>
+        <Literal>A set of graphics accompanying the model card&apos;s dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Input_Format_Information</IRI>
+        <Literal>content describing the inputed data&apos;s format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#License_Information</IRI>
+        <Literal>information about the license for the machine learning model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Limitation_Information</IRI>
+        <Literal>content relating to the technical limits of the machine learning model (e.g. trained on ungeneralized data).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Mitigation_Strategy</IRI>
+        <Literal>content of the model card that addresses the risk or ethical consideration of the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Model_Architecture_Information</IRI>
+        <Literal>content summarizing the architecture of the model (software used, algortihm, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Model_Card_Report</IRI>
+        <Literal>The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Model_Card_Report</IRI>
+        <Literal>a report that details characteristics of machine learning model to supplement its release to the public</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Model_Card_Report</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Model_Detail</IRI>
+        <Literal>Basic information about the model that includes licensing information, owner information, the architecture of the model (algorthim employed), references (cited papers), and versioning information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Model_Detail</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Model_Parameter</IRI>
+        <Literal>summarized content relating to the parameters for the development of the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Out_of_Scope_Use_Case</IRI>
+        <Literal>&quot;for use on black-and-white images only; please consider our research group’s full-color-image classifier for color images.”</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Out_of_Scope_Use_Case</IRI>
+        <Literal>&quot;not for use on text examples shorter than 100 tokens&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Out_of_Scope_Use_Case</IRI>
+        <Literal>&quot;Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Out_of_Scope_Use_Case</IRI>
+        <Literal>content that is a type of use case information but specific to use cases that are out of scope of the intended use case.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Out_of_Scope_Use_Case</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Output_Format_Information</IRI>
+        <Literal>content describing the outputted data&apos;s format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Owner_Information</IRI>
+        <Literal>information about the individuals involved in the development of the machine learning model. This includes contact information, the names of the individuals, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Performance_Metric_Information</IRI>
+        <Literal>content here summarizes the information about the metrics (precision, recall, f1 score, etc.) that measured the performance of the model. One can report the values and portion of the data (slice).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Personally_Identifable_Information</IRI>
+        <Literal>personally identifiable information as &quot;any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual&apos;s identity, such as name, social security number, date and place of birth, mother&apos;s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Personally_Identifable_Information</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Personal_data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Personally_Identifable_Information</IRI>
+        <Literal>https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Primary_Intended_Use_Case_Information</IRI>
+        <Literal>&quot;This section details whether the model was developed with general or specific tasks in mind (e.g., plant recognition worldwide or in the Pacific Northwest). The use cases may be as broadly or narrowly defined as the developers intend. For example, if the model was built simply to label images, then this task should be indicated as the primary intended use case.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Primary_Intended_Use_Case_Information</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Primary_Intended_User_Information</IRI>
+        <Literal>&quot;For example, was the model developed for entertainment purposes, for hobbyists, or enterprise solutions? This helps users gain insight into how robust the model may be to different kinds of inputs.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Primary_Intended_User_Information</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Quantatitive_Analysis</IRI>
+        <Literal>content overview of the quantatitve analysis of the model, specifically the performance of the model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>#Quantatitive_Analysis</IRI>
         <Literal>need to connect evaluation data information and training data information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>#Quantatitive_Analysis</IRI>
         <Literal>should their be a specified graphic collection for Quantative Analysis?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Reference_Information</IRI>
+        <Literal>information for any references related to the machine learning model (research papers, website, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Risk_Information</IRI>
+        <Literal>content information relating to potential uncertainity about utilizing the model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Sensitive_Data_Information</IRI>
+        <Literal>Information relating to sensitive datasets that contain info like personal information that was used to develop the machine learning model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Synthetic_Evaluation_Data_Information</IRI>
+        <Literal>A type of evaluation dataset. &quot;It is often difficult to find datasets that represent populations outside of the initial domain used in training. In some of these situations, synthetically generated datasets may provide representation for use cases that would otherwise go unevaluated&quot; (Mitchell et al., 2019)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Synthetic_Evaluation_Data_Information</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Trade-off_Information</IRI>
+        <Literal>&quot;This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Trade-off_Information</IRI>
+        <Literal>content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Trade-off_Information</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -811,9 +1139,39 @@
         <Literal>Recommendations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Training_Data_Information</IRI>
+        <Literal>information about the training data used for evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Training_Data_Information</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Use_Case_Information</IRI>
+        <Literal>&quot;This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Use_Case_Information</IRI>
+        <Literal>the content here involves information about intential uses of the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Use_Case_Information</IRI>
+        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#Use_Case_Information</IRI>
         <Literal>Intended Use</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#User_Information</IRI>
+        <Literal>content information pertaining to intended users of the model. This includes individuals that may be impacted as an outcome of the use of the model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -826,9 +1184,9 @@
         <Literal>Intended User Information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#Version_Information</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Content section for version information</Literal>
+        <Literal>Content section for version information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
