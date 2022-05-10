@@ -18,16 +18,32 @@
     <Import>http://www.w3.org/ns/prov-o-20130430</Import>
     <Import>https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal>Tuan Amith and Cui Tao</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Model Card Ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
         <Literal>An ontology representing the model card structure</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal>Model Card Ontology</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Tuan Amith and Cui Tao</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Degui Zhi</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Kirk Roberts</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Licong Cui</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Xiaqian Jiang</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000301"/>
