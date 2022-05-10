@@ -12,13 +12,15 @@
                                                 <http://www.w3.org/2004/02/skos/core> ,
                                                 <http://www.w3.org/ns/prov-o-20130430> ,
                                                 <https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl> ;
-                                    <http://purl.org/dc/terms/title> "Model Card Ontology" ;
-                                    <http://purl.org/dc/terms/creator> "Tuan Amith and Cui Tao" ;
                                     <http://purl.org/dc/terms/contributor> "Degui Zhi" ,
                                                                            "Kirk Roberts" ,
                                                                            "Licong Cui" ,
                                                                            "Xiaqian Jiang" ;
-                                    <http://purl.org/dc/terms/description> "An ontology representing the model card structure" .
+                                    <http://purl.org/dc/terms/creator> "Tuan Amith and Cui Tao" ;
+                                    <http://purl.org/dc/terms/description> "An ontology representing the model card structure" ;
+                                    <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/3.0/" ;
+                                    <http://purl.org/dc/terms/title> "Model Card Ontology" ;
+                                    owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
