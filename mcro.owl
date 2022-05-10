@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://sbmi.uth.edu/ontology/mco"
+     xml:base="http://sbmi.uth.edu/ontology/mcro"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://sbmi.uth.edu/ontology/mco">
-    <Prefix name="" IRI="http://sbmi.uth.edu/ontology/mco"/>
-    <Prefix name="mco" IRI="http://sbmi.uth.edu/ontology/mco#"/>
+     ontologyIRI="http://sbmi.uth.edu/ontology/mcro">
+    <Prefix name="" IRI="http://sbmi.uth.edu/ontology/mcro"/>
+    <Prefix name="mcro" IRI="http://sbmi.uth.edu/ontology/mcro#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -16,7 +16,7 @@
     <Import>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Import>
     <Import>http://www.w3.org/2004/02/skos/core</Import>
     <Import>http://www.w3.org/ns/prov-o-20130430</Import>
-    <Import>https://raw.githubusercontent.com/UTHealth-Ontology/MCO/main/import/swo_import_final.owl</Import>
+    <Import>https://raw.githubusercontent.com/UTHealth-Ontology/mcro/main/import/swo_import_final.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
         <Literal>Degui Zhi</Literal>

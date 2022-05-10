@@ -1,6 +1,6 @@
-# Model Card Ontology
+# Model Card Report Ontology
  
-An OWL2-encoded ontology modeling the model card report for machine learning model assests. The aim of this work is to describe machine learning models to communicate information about specific details about the model (trade offs, intended users, licensing, etc.). As an ontology-based artifact we can semantically express, standarize, and yield computable benefits to the model card reports. This reposoitory has both a .owl (mco.owl) and .ttl (mco.ttl) files available.
+An OWL2-encoded ontology modeling the model card report for machine learning model assests. The aim of this work is to describe machine learning models to communicate information about specific details about the model (trade offs, intended users, licensing, etc.). As an ontology-based artifact we can semantically express, standarize, and yield computable benefits to the model card reports. This reposoitory has both a .owl (mcro.owl) and .ttl (mcro.ttl) files available.
 
 This ontology utilizes: 
 * Information Artifact Ontology, 
