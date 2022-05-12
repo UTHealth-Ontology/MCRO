@@ -1,1297 +1,1068 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://sbmi.uth.edu/ontology/mcro"
      xml:base="http://sbmi.uth.edu/ontology/mcro"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:mcro="http://sbmi.uth.edu/ontology/mcro#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://sbmi.uth.edu/ontology/mcro">
-    <Prefix name="" IRI="http://sbmi.uth.edu/ontology/mcro"/>
-    <Prefix name="mcro" IRI="http://sbmi.uth.edu/ontology/mcro#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Import>
-    <Import>http://www.w3.org/2004/02/skos/core</Import>
-    <Import>http://www.w3.org/ns/prov-o-20130430</Import>
-    <Import>https://raw.githubusercontent.com/UTHealth-Ontology/mcro/main/import/swo_import_final.owl</Import>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Degui Zhi</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Kirk Roberts</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Licong Cui</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Xiaqian Jiang</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal>Tuan Amith and Cui Tao</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal>An ontology representing the model card structure</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
-        <Literal>https://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal>Model Card Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000301"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000310"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000320"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Accuracy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Area_Under_the_Curve"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Citation_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Consideration_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dataset_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ethical_Consideration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Evaluation_Data_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#F1-Score"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#False_Discovery_Rate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#False_Ommission_Rate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#False_Positive_Rate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Format_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Graphic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Graphic_Collection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Input_Format_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#License_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Limitation_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mitigation_Strategy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Model_Architecture_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Model_Card_Report"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Model_Detail"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Model_Parameter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Out_of_Scope_Use_Case"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Output_Format_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Owner_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Percision-Recall_Curve"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Performance_Metric_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Personally_Identifable_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Primary_Intended_Use_Case_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Primary_Intended_User_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Quantatitive_Analysis"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Reference_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Risk_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sensitive_Data_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Synthetic_Evaluation_Data_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Trade-off_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Training_Data_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Use_Case_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#User_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Version_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#model_card_report_section"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="rdf:List"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ebi.ac.uk/swo/SWO_0004000"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#citation_text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#confidence_interval"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#contact_text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#custom_text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#documentation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#model_card_text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#name_text"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#overview"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#performance_metric_value"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#sensitive_data"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#slice"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#threshold"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#trade-off-text"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov-o"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov-o-20120312"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov-o#"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="#image"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
-        <Class IRI="#Graphic"/>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Accuracy"/>
-        <Class IRI="#Performance_Metric_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Area_Under_the_Curve"/>
-        <Class IRI="#Performance_Metric_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citation_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citation_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000301"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citation_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#documentation"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citation_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#overview"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Consideration_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Consideration_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#Ethical_Consideration"/>
-                <Class IRI="#Limitation_Information"/>
-                <Class IRI="#Trade-off_Information"/>
-                <Class IRI="#Use_Case_Information"/>
-                <Class IRI="#User_Information"/>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dataset_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dataset_Information"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <Class IRI="#Model_Parameter"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <Class IRI="#Quantatitive_Analysis"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dataset_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000622"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dataset_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#Graphic_Collection"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dataset_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ethical_Consideration"/>
-        <Class IRI="#Risk_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Evaluation_Data_Information"/>
-        <Class IRI="#Dataset_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#F1-Score"/>
-        <Class IRI="#Performance_Metric_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#False_Discovery_Rate"/>
-        <Class IRI="#Performance_Metric_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#False_Ommission_Rate"/>
-        <Class IRI="#Performance_Metric_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#False_Positive_Rate"/>
-        <Class IRI="#Performance_Metric_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Format_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Format_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000098"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Graphic_Collection"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Graphic_Collection"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Graphic_Collection"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000622"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Input_Format_Information"/>
-        <Class IRI="#Format_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#License_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#License_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000002"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#License_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#custom_text"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#License_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#documentation"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#License_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#overview"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Limitation_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mitigation_Strategy"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mitigation_Strategy"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="#Risk_Information"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Architecture_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Architecture_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Architecture_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Card_Report"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Card_Report"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#Consideration_Information"/>
-                <Class IRI="#Model_Detail"/>
-                <Class IRI="#Model_Parameter"/>
-                <Class IRI="#Quantatitive_Analysis"/>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Card_Report"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Detail"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Detail"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#Citation_Information"/>
-                <Class IRI="#License_Information"/>
-                <Class IRI="#Model_Architecture_Information"/>
-                <Class IRI="#Owner_Information"/>
-                <Class IRI="#Reference_Information"/>
-                <Class IRI="#Version_Information"/>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Detail"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#documentation"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Detail"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#overview"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Parameter"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Model_Parameter"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#Dataset_Information"/>
-                <Class IRI="#Input_Format_Information"/>
-                <Class IRI="#Model_Architecture_Information"/>
-                <Class IRI="#Output_Format_Information"/>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Out_of_Scope_Use_Case"/>
-        <Class IRI="#Use_Case_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Output_Format_Information"/>
-        <Class IRI="#Format_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Owner_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Owner_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <ObjectUnionOf>
-                <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-                <Class IRI="http://www.w3.org/ns/prov#Person"/>
-            </ObjectUnionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Owner_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#contact_text"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Owner_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#documentation"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Owner_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#name_text"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Owner_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#overview"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Percision-Recall_Curve"/>
-        <Class IRI="#Performance_Metric_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Performance_Metric_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Performance_Metric_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#confidence_interval"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Performance_Metric_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#performance_metric_value"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Performance_Metric_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#slice"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Performance_Metric_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#threshold"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Personally_Identifable_Information"/>
-        <Class IRI="#Sensitive_Data_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Primary_Intended_Use_Case_Information"/>
-        <Class IRI="#Use_Case_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Primary_Intended_User_Information"/>
-        <Class IRI="#User_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Quantatitive_Analysis"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Quantatitive_Analysis"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000622"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Quantatitive_Analysis"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#Graphic_Collection"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Quantatitive_Analysis"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#Dataset_Information"/>
-                <Class IRI="#Graphic_Collection"/>
-                <Class IRI="#Performance_Metric_Information"/>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reference_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reference_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reference_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#documentation"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reference_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#overview"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Risk_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sensitive_Data_Information"/>
-        <Class IRI="#Dataset_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sensitive_Data_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#sensitive_data"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Synthetic_Evaluation_Data_Information"/>
-        <Class IRI="#Evaluation_Data_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Trade-off_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Training_Data_Information"/>
-        <Class IRI="#Dataset_Information"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Use_Case_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#User_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Version_Information"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Version_Information"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000129"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Version_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#documentation"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Version_Information"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#overview"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#model_card_report_section"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000314"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.ebi.ac.uk/swo/SWO_0000002"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </SubClassOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#citation_text"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#confidence_interval"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#contact_text"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#custom_text"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#documentation"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#name_text"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#overview"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#performance_metric_value"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#sensitive_data"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#slice"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#threshold"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#trade-off-text"/>
-        <DataProperty IRI="#model_card_text"/>
-    </SubDataPropertyOf>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#overview"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#performance_metric_value"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#trade-off-text"/>
-    </FunctionalDataProperty>
-    <DataPropertyDomain>
-        <DataProperty IRI="#sensitive_data"/>
-        <Class IRI="#Sensitive_Data_Information"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#contact_text"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#model_card_text"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#name_text"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#performance_metric_value"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#sensitive_data"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#slice"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#trade-off-text"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Accuracy</IRI>
-        <Literal>content in this section should describe &quot;is how close or far off a given set of measurements (observations or readings) are to their true value&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Accuracy</IRI>
-        <Literal>https://en.wikipedia.org/wiki/Accuracy_and_precision</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Area_Under_the_Curve</IRI>
-        <Literal>content pertaining to the area under the ROC curve.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#Area_Under_the_Curve</IRI>
-        <Literal>AUC</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Citation_Information</IRI>
-        <Literal>information relating to the citation for the targetted model. This is part of the model details component of the model card report</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Consideration_Information</IRI>
-        <Literal>This section pertains to &quot;Factors&quot; of the model card report by Mitchell et al., 2019. The considerations section includes qualitative information about your model, including some analysis of its risks and limitations. As such, this section usually requires careful consideration, and conversations with many relevant  stakeholders, including other model developers, dataset producers, and downstream users likely to interact with your model, or be affected by its outputs.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#Consideration_Information</IRI>
-        <Literal>Factors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Dataset_Information</IRI>
-        <Literal>Information about the data that was used to develop the model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Ethical_Consideration</IRI>
-        <Literal>content information that is a type of risk information that is specific to ethical consideration if using the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Evaluation_Data_Information</IRI>
-        <Literal>&quot;Evaluation datasets should include datasets that are publicly available for third-party use. These could be existing datasets or new ones provided alongside the model card analyses to enable further benchmarking... the evaluation datasets should not only be representative of the model’s typical use cases but also anticipated test scenarios and challenging cases.&quot;
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:edamontology="http://edamontology.org#">
+    <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/mcro">
+        <owl:versionIRI rdf:resource="http://sbmi.uth.edu/ontology/mcro/1.0.0"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/mcro/main/import/swo_import_final.owl"/>
+        <terms:contributor>Degui Zhi</terms:contributor>
+        <terms:contributor>Kirk Roberts</terms:contributor>
+        <terms:contributor>Licong Cui</terms:contributor>
+        <terms:contributor>Xiaqian Jiang</terms:contributor>
+        <terms:creator>Tuan Amith and Cui Tao</terms:creator>
+        <terms:description>An ontology representing the model card structure</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/3.0/</terms:license>
+        <terms:title>Model Card Ontology</terms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-10</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#image -->
+
+    <owl:AnnotationProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#image">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/mcro#Graphic"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004000 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004000">
+        <rdfs:label>has version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9001002 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#citation_text -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#citation_text">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <obo:IAO_0000115>additional information abou the citation associated with the model</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#confidence_interval -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#confidence_interval">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <obo:IAO_0000115>value of the confidence interval attributed to the Performance Metric concept</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#contact_text -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#contact_text">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Data pertaining to the contact information of the model&apos;s contact information. This is associated to the Owner Information class of the Model Card Ontology</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#custom_text -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#custom_text">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <obo:IAO_0000115>Additional textual information attributed to the licensing information.</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#documentation -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#documentation">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <obo:IAO_0000115>Detailed textual information of the model card that is attributed to specific concepts of the Model Card Ontology. This contrasts with the &quot;overview&quot; data property as the &quot;overview&quot; has a summarized version of &quot;documentation&quot;</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#model_card_text -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#model_card_text">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>These are Model Card Ontology specific data properties that provide attributes to its concepts.</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#name_text -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#name_text">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Name of the owner of the model. This is linked to the Owner Information concept of the Model Card Ontology</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#overview -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#overview">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <obo:IAO_0000115>Summary textual information for the concepts of the Model Card Ontology</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#performance_metric_value -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#performance_metric_value">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <obo:IAO_0000115>general numeric value associated with the Performance Metric concepts</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#sensitive_data -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#sensitive_data">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/mcro#Sensitive_Data_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>&quot;A description of any sensitive data that may be present in adataset. Be sure to note PII information such as names, addresses, phone numbers, etc. Preferably, such info should be scrubbed from a dataset if possible. Note that even non-identifying information, such as zip code, age, race, and gender, can be used to identify individuals when aggregated. Please describe any such fields here&quot; Google LLC</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#slice -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#slice">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>This is data property is specific to Perfomance Metric concepts. It attributes information about the data partition used to experiment on the model.</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#threshold -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#threshold">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <obo:IAO_0000115>This is a value pertaining to a threshold value that is attributed to the Performance Metric concept for the Model Card ontology.</obo:IAO_0000115>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#trade-off-text -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#trade-off-text">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#model_card_text"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000038 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000038">
+        <owl:equivalentClass rdf:resource="http://sbmi.uth.edu/ontology/mcro#Graphic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000301"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000320"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Accuracy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+        <obo:IAO_0000115>content in this section should describe &quot;is how close or far off a given set of measurements (observations or readings) are to their true value&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Accuracy_and_precision</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Area_Under_the_Curve -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Area_Under_the_Curve">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+        <obo:IAO_0000115>content pertaining to the area under the ROC curve.</obo:IAO_0000115>
+        <skos:altLabel>AUC</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Citation_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Citation_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#documentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#overview"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>information relating to the citation for the targetted model. This is part of the model details component of the model card report</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Consideration_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Consideration_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Ethical_Consideration"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Limitation_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Trade-off_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Use_Case_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#User_Information"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This section pertains to &quot;Factors&quot; of the model card report by Mitchell et al., 2019. The considerations section includes qualitative information about your model, including some analysis of its risks and limitations. As such, this section usually requires careful consideration, and conversations with many relevant  stakeholders, including other model developers, dataset producers, and downstream users likely to interact with your model, or be affected by its outputs.</obo:IAO_0000115>
+        <skos:altLabel>Factors</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Dataset_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Dataset_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#Model_Parameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#Quantatitive_Analysis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#Graphic_Collection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Information about the data that was used to develop the model</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Ethical_Consideration -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Ethical_Consideration">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Risk_Information"/>
+        <obo:IAO_0000115>content information that is a type of risk information that is specific to ethical consideration if using the model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Evaluation_Data_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Evaluation_Data_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Dataset_Information"/>
+        <obo:IAO_0000115>&quot;Evaluation datasets should include datasets that are publicly available for third-party use. These could be existing datasets or new ones provided alongside the model card analyses to enable further benchmarking... the evaluation datasets should not only be representative of the model’s typical use cases but also anticipated test scenarios and challenging cases.&quot;
 
 Details on the dataset(s) used for the quantitative analyses in the card. 
 - Datasets 
 - Motivation 
 - Preprocessing&quot;
 
-(Mitchell et al., 2019)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Evaluation_Data_Information</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#F1-Score</IRI>
-        <Literal>The F1 score is the harmonic mean of the precision and recall.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#F1-Score</IRI>
-        <Literal>https://en.wikipedia.org/wiki/F-score</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#False_Discovery_Rate</IRI>
-        <Literal>&quot;The false discovery rate (FDR) is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons. FDR-controlling procedures are designed to control the FDR, which is the expected proportion of &quot;discoveries&quot; (rejected null hypotheses) that are false (incorrect rejections of the null)&quot;. quivalently, the FDR is the expected ratio of the number of false positive classifications (false discoveries) to the total number of positive classifications (rejections of the null). The total number of rejections of the null include both the number of false positives (FP) and true positives (TP). Simply put, FDR = FP / (FP + TP). FDR-controlling procedures provide less stringent control of Type I errors compared to familywise error rate (FWER) controlling procedures (such as the Bonferroni correction), which control the probability of at least one Type I error. Thus, FDR-controlling procedures have greater power, at the cost of increased numbers of Type I errors.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#False_Discovery_Rate</IRI>
-        <Literal>https://en.wikipedia.org/wiki/False_discovery_rate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#False_Ommission_Rate</IRI>
-        <Literal>FOR</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#False_Positive_Rate</IRI>
-        <Literal>&quot;A false positive error, or false positive, is a result that indicates a given condition exists when it does not. For example, a pregnancy test which indicates a woman is pregnant when she is not, or the conviction of an innocent person. A false positive error is a type I error where the test is checking a single condition, and wrongly gives an affirmative (positive) decision.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#False_Positive_Rate</IRI>
-        <Literal>https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Format_Information</IRI>
-        <Literal>content summarizing the input and output data format for the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Graphic_Collection</IRI>
-        <Literal>A set of graphics accompanying the model card&apos;s dataset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Input_Format_Information</IRI>
-        <Literal>content describing the inputed data&apos;s format</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#License_Information</IRI>
-        <Literal>information about the license for the machine learning model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Limitation_Information</IRI>
-        <Literal>content relating to the technical limits of the machine learning model (e.g. trained on ungeneralized data).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Mitigation_Strategy</IRI>
-        <Literal>content of the model card that addresses the risk or ethical consideration of the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Model_Architecture_Information</IRI>
-        <Literal>content summarizing the architecture of the model (software used, algortihm, etc.)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Model_Card_Report</IRI>
-        <Literal>The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Model_Card_Report</IRI>
-        <Literal>a report that details characteristics of machine learning model to supplement its release to the public</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Model_Card_Report</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Model_Detail</IRI>
-        <Literal>Basic information about the model that includes licensing information, owner information, the architecture of the model (algorthim employed), references (cited papers), and versioning information</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Model_Detail</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Model_Parameter</IRI>
-        <Literal>summarized content relating to the parameters for the development of the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#Out_of_Scope_Use_Case</IRI>
-        <Literal>&quot;for use on black-and-white images only; please consider our research group’s full-color-image classifier for color images.”</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#Out_of_Scope_Use_Case</IRI>
-        <Literal>&quot;not for use on text examples shorter than 100 tokens&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Out_of_Scope_Use_Case</IRI>
-        <Literal>&quot;Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Out_of_Scope_Use_Case</IRI>
-        <Literal>content that is a type of use case information but specific to use cases that are out of scope of the intended use case.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Out_of_Scope_Use_Case</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Output_Format_Information</IRI>
-        <Literal>content describing the outputted data&apos;s format</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Owner_Information</IRI>
-        <Literal>information about the individuals involved in the development of the machine learning model. This includes contact information, the names of the individuals, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Performance_Metric_Information</IRI>
-        <Literal>content here summarizes the information about the metrics (precision, recall, f1 score, etc.) that measured the performance of the model. One can report the values and portion of the data (slice).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Personally_Identifable_Information</IRI>
-        <Literal>personally identifiable information as &quot;any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual&apos;s identity, such as name, social security number, date and place of birth, mother&apos;s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Personally_Identifable_Information</IRI>
-        <Literal>https://en.wikipedia.org/wiki/Personal_data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Personally_Identifable_Information</IRI>
-        <Literal>https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Primary_Intended_Use_Case_Information</IRI>
-        <Literal>&quot;This section details whether the model was developed with general or specific tasks in mind (e.g., plant recognition worldwide or in the Pacific Northwest). The use cases may be as broadly or narrowly defined as the developers intend. For example, if the model was built simply to label images, then this task should be indicated as the primary intended use case.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Primary_Intended_Use_Case_Information</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Primary_Intended_User_Information</IRI>
-        <Literal>&quot;For example, was the model developed for entertainment purposes, for hobbyists, or enterprise solutions? This helps users gain insight into how robust the model may be to different kinds of inputs.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Primary_Intended_User_Information</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Quantatitive_Analysis</IRI>
-        <Literal>content overview of the quantatitve analysis of the model, specifically the performance of the model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
-        <IRI>#Quantatitive_Analysis</IRI>
-        <Literal>need to connect evaluation data information and training data information</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
-        <IRI>#Quantatitive_Analysis</IRI>
-        <Literal>should their be a specified graphic collection for Quantative Analysis?</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Reference_Information</IRI>
-        <Literal>information for any references related to the machine learning model (research papers, website, etc.)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Risk_Information</IRI>
-        <Literal>content information relating to potential uncertainity about utilizing the model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Sensitive_Data_Information</IRI>
-        <Literal>Information relating to sensitive datasets that contain info like personal information that was used to develop the machine learning model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Synthetic_Evaluation_Data_Information</IRI>
-        <Literal>A type of evaluation dataset. &quot;It is often difficult to find datasets that represent populations outside of the initial domain used in training. In some of these situations, synthetically generated datasets may provide representation for use cases that would otherwise go unevaluated&quot; (Mitchell et al., 2019)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Synthetic_Evaluation_Data_Information</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Trade-off_Information</IRI>
-        <Literal>&quot;This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Trade-off_Information</IRI>
-        <Literal>content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Trade-off_Information</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#Trade-off_Information</IRI>
-        <Literal>Caveats</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#Trade-off_Information</IRI>
-        <Literal>Recommendations</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Training_Data_Information</IRI>
-        <Literal>information about the training data used for evaluation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Training_Data_Information</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Use_Case_Information</IRI>
-        <Literal>&quot;This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Use_Case_Information</IRI>
-        <Literal>the content here involves information about intential uses of the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Use_Case_Information</IRI>
-        <Literal>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#Use_Case_Information</IRI>
-        <Literal>Intended Use</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#User_Information</IRI>
-        <Literal>content information pertaining to intended users of the model. This includes individuals that may be impacted as an outcome of the use of the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#User_Information</IRI>
-        <Literal>target user for the model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#User_Information</IRI>
-        <Literal>Intended User Information</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Version_Information</IRI>
-        <Literal>Content section for version information</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#citation_text</IRI>
-        <Literal>additional information abou the citation associated with the model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#confidence_interval</IRI>
-        <Literal>value of the confidence interval attributed to the Performance Metric concept</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#contact_text</IRI>
-        <Literal>Data pertaining to the contact information of the model&apos;s contact information. This is associated to the Owner Information class of the Model Card Ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#custom_text</IRI>
-        <Literal>Additional textual information attributed to the licensing information.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#documentation</IRI>
-        <Literal>Detailed textual information of the model card that is attributed to specific concepts of the Model Card Ontology. This contrasts with the &quot;overview&quot; data property as the &quot;overview&quot; has a summarized version of &quot;documentation&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
-        <IRI>#model_card_report_section</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#model_card_text</IRI>
-        <Literal>These are Model Card Ontology specific data properties that provide attributes to its concepts.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#name_text</IRI>
-        <Literal>Name of the owner of the model. This is linked to the Owner Information concept of the Model Card Ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#overview</IRI>
-        <Literal>Summary textual information for the concepts of the Model Card Ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#performance_metric_value</IRI>
-        <Literal>general numeric value associated with the Performance Metric concepts</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#sensitive_data</IRI>
-        <Literal>&quot;A description of any sensitive data that may be present in adataset. Be sure to note PII information such as names, addresses, phone numbers, etc. Preferably, such info should be scrubbed from a dataset if possible. Note that even non-identifying information, such as zip code, age, race, and gender, can be used to identify individuals when aggregated. Please describe any such fields here&quot; Google LLC</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#slice</IRI>
-        <Literal>This is data property is specific to Perfomance Metric concepts. It attributes information about the data partition used to experiment on the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#threshold</IRI>
-        <Literal>This is a value pertaining to a threshold value that is attributed to the Performance Metric concept for the Model Card ontology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
-        <IRI>#trade-off-text</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.ebi.ac.uk/swo/SWO_0004000</IRI>
-        <Literal>has version</Literal>
-    </AnnotationAssertion>
-    <AnnotationPropertyDomain>
-        <AnnotationProperty IRI="#image"/>
-        <IRI>#Graphic</IRI>
-    </AnnotationPropertyDomain>
-</Ontology>
+(Mitchell et al., 2019)</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#F1-Score -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#F1-Score">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+        <obo:IAO_0000115>The F1 score is the harmonic mean of the precision and recall.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/F-score</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#False_Discovery_Rate -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#False_Discovery_Rate">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+        <obo:IAO_0000115>&quot;The false discovery rate (FDR) is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons. FDR-controlling procedures are designed to control the FDR, which is the expected proportion of &quot;discoveries&quot; (rejected null hypotheses) that are false (incorrect rejections of the null)&quot;. quivalently, the FDR is the expected ratio of the number of false positive classifications (false discoveries) to the total number of positive classifications (rejections of the null). The total number of rejections of the null include both the number of false positives (FP) and true positives (TP). Simply put, FDR = FP / (FP + TP). FDR-controlling procedures provide less stringent control of Type I errors compared to familywise error rate (FWER) controlling procedures (such as the Bonferroni correction), which control the probability of at least one Type I error. Thus, FDR-controlling procedures have greater power, at the cost of increased numbers of Type I errors.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/False_discovery_rate</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#False_Ommission_Rate -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#False_Ommission_Rate">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+        <skos:altLabel>FOR</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#False_Positive_Rate -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#False_Positive_Rate">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+        <obo:IAO_0000115>&quot;A false positive error, or false positive, is a result that indicates a given condition exists when it does not. For example, a pregnancy test which indicates a woman is pregnant when she is not, or the conviction of an innocent person. A false positive error is a type I error where the test is checking a single condition, and wrongly gives an affirmative (positive) decision.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Format_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Format_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>content summarizing the input and output data format for the model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Graphic -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Graphic"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Graphic_Collection -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Graphic_Collection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A set of graphics accompanying the model card&apos;s dataset</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Input_Format_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Input_Format_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Format_Information"/>
+        <obo:IAO_0000115>content describing the inputed data&apos;s format</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#License_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#License_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#custom_text"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#documentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#overview"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>information about the license for the machine learning model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Limitation_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Limitation_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>content relating to the technical limits of the machine learning model (e.g. trained on ungeneralized data).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Mitigation_Strategy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Mitigation_Strategy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#Risk_Information"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>content of the model card that addresses the risk or ethical consideration of the model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Model_Architecture_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Architecture_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>content summarizing the architecture of the model (software used, algortihm, etc.)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Model_Card_Report -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Card_Report">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Consideration_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Detail"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Parameter"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Quantatitive_Analysis"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation</obo:IAO_0000115>
+        <obo:IAO_0000115>a report that details characteristics of machine learning model to supplement its release to the public</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Model_Detail -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Detail">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Citation_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#License_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Architecture_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Owner_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Reference_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Version_Information"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#documentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#overview"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Basic information about the model that includes licensing information, owner information, the architecture of the model (algorthim employed), references (cited papers), and versioning information</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Model_Parameter -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Parameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Dataset_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Input_Format_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Model_Architecture_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Output_Format_Information"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>summarized content relating to the parameters for the development of the model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Out_of_Scope_Use_Case -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Out_of_Scope_Use_Case">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Use_Case_Information"/>
+        <obo:IAO_0000112>&quot;for use on black-and-white images only; please consider our research group’s full-color-image classifier for color images.”</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;not for use on text examples shorter than 100 tokens&quot;</obo:IAO_0000112>
+        <obo:IAO_0000115>&quot;Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000115>content that is a type of use case information but specific to use cases that are out of scope of the intended use case.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Output_Format_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Output_Format_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Format_Information"/>
+        <obo:IAO_0000115>content describing the outputted data&apos;s format</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Owner_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Owner_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Organization"/>
+                            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#contact_text"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#documentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#name_text"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#overview"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>information about the individuals involved in the development of the machine learning model. This includes contact information, the names of the individuals, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Percision-Recall_Curve -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Percision-Recall_Curve">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#confidence_interval"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#performance_metric_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#slice"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#threshold"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>content here summarizes the information about the metrics (precision, recall, f1 score, etc.) that measured the performance of the model. One can report the values and portion of the data (slice).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Personally_Identifable_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Personally_Identifable_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Sensitive_Data_Information"/>
+        <obo:IAO_0000115>personally identifiable information as &quot;any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual&apos;s identity, such as name, social security number, date and place of birth, mother&apos;s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_data</obo:IAO_0000119>
+        <obo:IAO_0000119>https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Primary_Intended_Use_Case_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Primary_Intended_Use_Case_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Use_Case_Information"/>
+        <obo:IAO_0000115>&quot;This section details whether the model was developed with general or specific tasks in mind (e.g., plant recognition worldwide or in the Pacific Northwest). The use cases may be as broadly or narrowly defined as the developers intend. For example, if the model was built simply to label images, then this task should be indicated as the primary intended use case.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Primary_Intended_User_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Primary_Intended_User_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#User_Information"/>
+        <obo:IAO_0000115>&quot;For example, was the model developed for entertainment purposes, for hobbyists, or enterprise solutions? This helps users gain insight into how robust the model may be to different kinds of inputs.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Quantatitive_Analysis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Quantatitive_Analysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#Graphic_Collection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Dataset_Information"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Graphic_Collection"/>
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#Performance_Metric_Information"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>content overview of the quantatitve analysis of the model, specifically the performance of the model</obo:IAO_0000115>
+        <skos:editorialNote>need to connect evaluation data information and training data information</skos:editorialNote>
+        <skos:editorialNote>should their be a specified graphic collection for Quantative Analysis?</skos:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Reference_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Reference_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#documentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#overview"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>information for any references related to the machine learning model (research papers, website, etc.)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Risk_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Risk_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>content information relating to potential uncertainity about utilizing the model</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Sensitive_Data_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Sensitive_Data_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Dataset_Information"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#sensitive_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Information relating to sensitive datasets that contain info like personal information that was used to develop the machine learning model</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Synthetic_Evaluation_Data_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Synthetic_Evaluation_Data_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Evaluation_Data_Information"/>
+        <obo:IAO_0000115>A type of evaluation dataset. &quot;It is often difficult to find datasets that represent populations outside of the initial domain used in training. In some of these situations, synthetically generated datasets may provide representation for use cases that would otherwise go unevaluated&quot; (Mitchell et al., 2019)</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Trade-off_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Trade-off_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>&quot;This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?&quot;</obo:IAO_0000115>
+        <obo:IAO_0000115>content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <skos:altLabel>Caveats</skos:altLabel>
+        <skos:altLabel>Recommendations</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Training_Data_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Training_Data_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#Dataset_Information"/>
+        <obo:IAO_0000115>information about the training data used for evaluation</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Use_Case_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Use_Case_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>&quot;This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000115>the content here involves information about intential uses of the model.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <skos:altLabel>Intended Use</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#User_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#User_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>content information pertaining to intended users of the model. This includes individuals that may be impacted as an outcome of the use of the model.</obo:IAO_0000115>
+        <rdfs:comment>target user for the model</rdfs:comment>
+        <skos:altLabel>Intended User Information</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#Version_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#Version_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000129"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#documentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#overview"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Content section for version information</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#model_card_report_section -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#model_card_report_section">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov-o -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov-o-20120312 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o-20120312"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov-o# -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o#"/>
+</rdf:RDF>
 
 
 
