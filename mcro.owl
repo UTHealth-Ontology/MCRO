@@ -19,7 +19,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/mcro">
-        <owl:versionIRI rdf:resource="http://sbmi.uth.edu/ontology/mcro/1.0.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-10</owl:versionInfo>
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/MCRO/main/mcro.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
@@ -32,7 +33,6 @@
         <terms:description>An ontology representing the model card structure</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/3.0/</terms:license>
         <terms:title>Model Card Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-10</owl:versionInfo>
     </owl:Ontology>
     
 

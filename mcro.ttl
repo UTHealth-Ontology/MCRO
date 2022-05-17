@@ -19,7 +19,7 @@
 @base <http://sbmi.uth.edu/ontology/mcro> .
 
 <http://sbmi.uth.edu/ontology/mcro> rdf:type owl:Ontology ;
-                                     owl:versionIRI <http://sbmi.uth.edu/ontology/mcro/1.0.0> ;
+                                     owl:versionIRI <https://raw.githubusercontent.com/UTHealth-Ontology/MCRO/main/mcro.owl> ;
                                      owl:imports <http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl> ,
                                                  <http://www.w3.org/2004/02/skos/core> ,
                                                  <http://www.w3.org/ns/prov-o-20130430> ,
