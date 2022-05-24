@@ -310,8 +310,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation</obo:IAO_0000115>
-        <obo:IAO_0000115>a report that details characteristics of machine learning model to supplement its release to the public</obo:IAO_0000115>
+        <obo:IAO_0000115>The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation. A report that details characteristics of machine learning model to supplement its release to the public.</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Model Card Report</rdfs:label>
     </owl:Class>
@@ -713,8 +712,7 @@ Details on the dataset(s) used for the quantitative analyses in the card.
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000038"/>
         <obo:IAO_0000112>&quot;for use on black-and-white images only; please consider our research group’s full-color-image classifier for color images.”</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;not for use on text examples shorter than 100 tokens&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115>&quot;Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.&quot;</obo:IAO_0000115>
-        <obo:IAO_0000115>content that is a type of use case information but specific to use cases that are out of scope of the intended use case.</obo:IAO_0000115>
+        <obo:IAO_0000115>&quot;Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.&quot; Content that is a type of use case information but specific to use cases that are out of scope of the intended use case.</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Out of Scope Use Case Section Information</rdfs:label>
     </owl:Class>
@@ -726,7 +724,7 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000024">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000013"/>
         <obo:IAO_0000115>content describing the outputted data&apos;s format</obo:IAO_0000115>
-        <rdfs:label>Output Formation Information Section</rdfs:label>
+        <rdfs:label>Output Format Information Section</rdfs:label>
     </owl:Class>
     
 
@@ -963,8 +961,7 @@ Details on the dataset(s) used for the quantitative analyses in the card.
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <obo:IAO_0000115>&quot;This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?&quot;</obo:IAO_0000115>
-        <obo:IAO_0000115>content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical.</obo:IAO_0000115>
+        <obo:IAO_0000115>Content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical. &quot;This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?&quot;</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Trade-off Information Section</rdfs:label>
         <skos:altLabel>Caveats</skos:altLabel>
@@ -988,8 +985,8 @@ Details on the dataset(s) used for the quantitative analyses in the card.
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <obo:IAO_0000115>&quot;This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.&quot;</obo:IAO_0000115>
-        <obo:IAO_0000115>the content here involves information about intential uses of the model.</obo:IAO_0000115>
+        <obo:IAO_0000115>The content here involves information about intential uses of the model.
+&quot;This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.&quot;</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Use Case Information Section</rdfs:label>
         <skos:altLabel>Intended Use</skos:altLabel>
