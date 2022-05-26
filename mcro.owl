@@ -657,6 +657,7 @@ Details on the dataset(s) used for the quantitative analyses in the card.
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115>a graph content specifically for a model card report</obo:IAO_0000115>
         <rdfs:label>Model Card Graphic</rdfs:label>
     </owl:Class>
     
