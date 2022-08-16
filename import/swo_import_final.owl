@@ -5136,21 +5136,6 @@ the graph structure of GO.</obo:IAO_0000115>
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000055 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000055">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000007"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000053"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">BioPAX RDF/XML format</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000056 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000056">
@@ -5159,12 +5144,6 @@ the graph structure of GO.</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000053"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">BioPAX Manchester OWL Syntax format</rdfs:label>
