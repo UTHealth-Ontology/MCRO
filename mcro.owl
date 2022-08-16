@@ -122,10 +122,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000041 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000041 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000041">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000041">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>additional information abou the citation associated with the model</obo:IAO_0000115>
         <rdfs:label>citation text</rdfs:label>
@@ -133,10 +133,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000042 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000042 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000042">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000042">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000115>value of the confidence interval attributed to the Performance Metric concept</obo:IAO_0000115>
         <rdfs:label>confidence interval value</rdfs:label>
@@ -144,10 +144,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000043 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000043 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000043">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000043">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>Data pertaining to the contact information of the model&apos;s contact information. This is associated to the Owner Information class of the Model Card Ontology</obo:IAO_0000115>
         <rdfs:label>contact text</rdfs:label>
@@ -155,10 +155,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000044 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000044 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000044">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000044">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>Additional textual information attributed to the licensing information.</obo:IAO_0000115>
         <rdfs:label>custom_text</rdfs:label>
@@ -166,10 +166,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000045 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000045 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000045">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000045">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>Detailed textual information of the model card that is attributed to specific concepts of the Model Card Ontology. This contrasts with the &quot;overview&quot; data property as the &quot;overview&quot; has a summarized version of &quot;documentation&quot;</obo:IAO_0000115>
         <rdfs:label>documentation</rdfs:label>
@@ -177,9 +177,9 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000046 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000046 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000046">
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000046">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>Model Card Report Ontology specific data properties that provide attributes to its concepts.</obo:IAO_0000115>
         <rdfs:label>model card text</rdfs:label>
@@ -187,10 +187,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000047 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000047 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000047">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000047">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>Name of the owner of the model. This is linked to the Owner Information concept of the Model Card Ontology</obo:IAO_0000115>
         <rdfs:label>name text</rdfs:label>
@@ -198,10 +198,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000048 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000048 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000048">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000048">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>Summary textual information for the concepts of the Model Card Ontology</obo:IAO_0000115>
@@ -210,10 +210,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000049 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000049 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000049">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000049">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000115>general numeric value associated with the Performance Metric concepts</obo:IAO_0000115>
@@ -222,11 +222,11 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000050 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000050 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000050">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
-        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000034"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000050">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000034"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>&quot;A description of any sensitive data that may be present in adataset. Be sure to note PII information such as names, addresses, phone numbers, etc. Preferably, such info should be scrubbed from a dataset if possible. Note that even non-identifying information, such as zip code, age, race, and gender, can be used to identify individuals when aggregated. Please describe any such fields here&quot; Google LLC</obo:IAO_0000115>
         <rdfs:label>sensitive data</rdfs:label>
@@ -234,10 +234,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000051 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000051 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000051">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000051">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:IAO_0000115>This is data property is specific to Perfomance Metric concepts. It attributes information about the data partition used to experiment on the model.</obo:IAO_0000115>
         <rdfs:label>slice</rdfs:label>
@@ -245,10 +245,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000052 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000052 -->
 
-    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000052">
-        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000046"/>
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000052">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000046"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000115>This is a value pertaining to a threshold value that is attributed to the Performance Metric concept for the Model Card ontology.</obo:IAO_0000115>
         <rdfs:label>threshold value</rdfs:label>
@@ -297,23 +297,32 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000005"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000021"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000022"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000031"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation. A report that details characteristics of machine learning model to supplement its release to the public.</obo:IAO_0000115>
@@ -323,10 +332,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000002 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000002 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000002">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000002">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
         <obo:IAO_0000115>Section content in this section should describe information in &quot;how close or far off a given set of measurements (observations or readings) are to their true value&quot;</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Accuracy_and_precision</obo:IAO_0000119>
         <rdfs:label>Accuracy Information Section</rdfs:label>
@@ -334,10 +343,10 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000003 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000003 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000003">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000003">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
         <obo:IAO_0000115>The content describes information pertaining to the area under the ROC curve.</obo:IAO_0000115>
         <rdfs:label>Area Under the Curve Information Section</rdfs:label>
         <skos:altLabel>AUC</skos:altLabel>
@@ -345,9 +354,9 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000004 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000004 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000004">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -357,13 +366,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -373,35 +382,49 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000005 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000005 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000005">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000007"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000017"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000036"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000038"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000039"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -412,23 +435,21 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000006 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000006 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000006">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000031"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000031"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -439,7 +460,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000014"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -454,20 +475,20 @@
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000007 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000007 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000007">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000033"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000007">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000033"/>
         <obo:IAO_0000115>Content information that is a type of risk information that is specific to ethical consideration if using the model.</obo:IAO_0000115>
         <rdfs:label>Ethical Consideration Section</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000008 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000008 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000008">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000006"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000008">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000006"/>
         <obo:IAO_0000115>The section is devoted in describing the evaluation dataset. &quot;Evaluation datasets should include datasets that are publicly available for third-party use. These could be existing datasets or new ones provided alongside the model card analyses to enable further benchmarking... the evaluation datasets should not only be representative of the model’s typical use cases but also anticipated test scenarios and challenging cases.&quot;
 
 Details on the dataset(s) used for the quantitative analyses in the card. 
@@ -482,10 +503,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000009 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000009 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000009">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000009">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
         <obo:IAO_0000115>The F1 score is the harmonic mean of the precision and recall. This section describes information relating to the F1 score revealed by the performance of the machine learning model.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/F-score</obo:IAO_0000119>
         <rdfs:label>F1-Score Information Section</rdfs:label>
@@ -493,10 +514,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000010 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000010 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000010">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000010">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
         <obo:IAO_0000115>The section describes information about the false discovery rate of the machine learning model. 
 
 &quot;The false discovery rate (FDR) is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons. FDR-controlling procedures are designed to control the FDR, which is the expected proportion of &quot;discoveries&quot; (rejected null hypotheses) that are false (incorrect rejections of the null)&quot;. quivalently, the FDR is the expected ratio of the number of false positive classifications (false discoveries) to the total number of positive classifications (rejections of the null). The total number of rejections of the null include both the number of false positives (FP) and true positives (TP). Simply put, FDR = FP / (FP + TP). FDR-controlling procedures provide less stringent control of Type I errors compared to familywise error rate (FWER) controlling procedures (such as the Bonferroni correction), which control the probability of at least one Type I error. Thus, FDR-controlling procedures have greater power, at the cost of increased numbers of Type I errors.&quot;</obo:IAO_0000115>
@@ -506,10 +527,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000011 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000011 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000011">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000011">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
         <obo:IAO_0000115>This section describes information relating to false ommision rate of the performance of the machine learning model. FOR is the probability that the true value is positive.</obo:IAO_0000115>
         <rdfs:label>False Ommission Rate Section Information</rdfs:label>
         <skos:altLabel>FOR</skos:altLabel>
@@ -517,10 +538,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000012 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000012 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000012">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000012">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
         <obo:IAO_0000115>This content describes the information pertaining to the model&apos;s false postive rate. &quot;A false positive error, or false positive, is a result that indicates a given condition exists when it does not. For example, a pregnancy test which indicates a woman is pregnant when she is not, or the conviction of an innocent person. A false positive error is a type I error where the test is checking a single condition, and wrongly gives an affirmative (positive) decision.&quot;</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error</obo:IAO_0000119>
         <rdfs:label>False Positive Rate Information Section</rdfs:label>
@@ -528,9 +549,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000013 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000013 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000013">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -544,9 +565,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000014 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000014 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000014">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
         <rdfs:subClassOf>
@@ -561,19 +582,19 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000015 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000015 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000015">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000013"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000015">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000013"/>
         <obo:IAO_0000115>This secton content serves to describe the inputed data&apos;s format for the machine learning model.</obo:IAO_0000115>
         <rdfs:label>Input Format Information Section</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000016 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000016 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000016">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -583,19 +604,19 @@ Details on the dataset(s) used for the quantitative analyses in the card.
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000044"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000044"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -605,9 +626,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000017 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000017 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000017">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>Content section relating to the technical limits of the machine learning model (e.g. trained on ungeneralized data).</obo:IAO_0000115>
         <rdfs:label>Limitation Information Section</rdfs:label>
@@ -615,14 +636,14 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000018 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000018 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000018">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000033"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Content section of the model card that addresses the risk or ethical consideration of the model.</obo:IAO_0000115>
@@ -631,9 +652,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000019 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000019 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000019">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -653,9 +674,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000020 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000020 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000020">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
         <obo:IAO_0000115>a graph content specifically for a model card report</obo:IAO_0000115>
         <rdfs:label>Model Card Graphic</rdfs:label>
@@ -663,36 +684,55 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000021 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000021 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000021">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000004"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000016"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000019"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000025"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000032"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000040"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -703,34 +743,43 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000022 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000022 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000022">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000006"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000015"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000019"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000024"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -740,10 +789,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000023 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000023 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000023">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000038"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000023">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000038"/>
         <obo:IAO_0000112>&quot;for use on black-and-white images only; please consider our research group’s full-color-image classifier for color images.”</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;not for use on text examples shorter than 100 tokens&quot;</obo:IAO_0000112>
         <obo:IAO_0000115>&quot;Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.&quot; Content that is a type of use case information but specific to use cases that are out of scope of the intended use case.</obo:IAO_0000115>
@@ -753,19 +802,19 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000024 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000024 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000024">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000013"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000024">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000013"/>
         <obo:IAO_0000115>This secton content serves to describe the outputted data&apos;s format for the machine learning model.</obo:IAO_0000115>
         <rdfs:label>Output Format Information Section</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000025 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000025 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000025">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -788,19 +837,19 @@ Details on the dataset(s) used for the quantitative analyses in the card.
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000047"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000047"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -810,19 +859,19 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000026 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000026 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000026">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000026">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
         <obo:IAO_0000115>This section is for the description of the precision and recall information of the machine learning model&apos;s performance.</obo:IAO_0000115>
         <rdfs:label>Percision-Recall Curve Information Section</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000027 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000027 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000027">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -832,19 +881,19 @@ Details on the dataset(s) used for the quantitative analyses in the card.
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000049"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000049"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000051"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000052"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -854,10 +903,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000028 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000028 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000028">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000034"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000028">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000034"/>
         <obo:IAO_0000115>personally identifiable information as &quot;any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual&apos;s identity, such as name, social security number, date and place of birth, mother&apos;s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.&quot; The section should specificially describe information about the personally identifiable datasets.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_data</obo:IAO_0000119>
         <obo:IAO_0000119>https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf</obo:IAO_0000119>
@@ -866,10 +915,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000029 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000029 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000029">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000038"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000029">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000038"/>
         <obo:IAO_0000115>&quot;This section details whether the model was developed with general or specific tasks in mind (e.g., plant recognition worldwide or in the Pacific Northwest). The use cases may be as broadly or narrowly defined as the developers intend. For example, if the model was built simply to label images, then this task should be indicated as the primary intended use case.&quot;</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Primary Intended Use Case Information Section</rdfs:label>
@@ -877,10 +926,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000030 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000030 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000030">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000039"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000030">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000039"/>
         <obo:IAO_0000115>This section describes the primary intended user for the machine learning model. &quot;For example, was the model developed for entertainment purposes, for hobbyists, or enterprise solutions? This helps users gain insight into how robust the model may be to different kinds of inputs.&quot;</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Primary Intended User Information Section</rdfs:label>
@@ -888,9 +937,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000031 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000031 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000031">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -901,32 +950,30 @@ Details on the dataset(s) used for the quantitative analyses in the card.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000014"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000006"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000014"/>
-                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000027"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -939,9 +986,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000032 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000032 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000032">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -951,13 +998,13 @@ Details on the dataset(s) used for the quantitative analyses in the card.
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -967,9 +1014,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000033 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000033 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000033">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>Content information relating to potential uncertainity about utilizing the model</obo:IAO_0000115>
         <rdfs:label>Risk Information Section</rdfs:label>
@@ -977,13 +1024,13 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000034 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000034 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000034">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000006"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000034">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000050"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -993,10 +1040,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000035 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000035 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000035">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000008"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000035">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000008"/>
         <obo:IAO_0000115>The section is devoted in descrbing the synthetic evaluation datasets used for a machine learning model. Synthetic evaluation datasets are a type of evaluation dataset. &quot;It is often difficult to find datasets that represent populations outside of the initial domain used in training. In some of these situations, synthetically generated datasets may provide representation for use cases that would otherwise go unevaluated&quot; (Mitchell et al., 2019). This section should described the aforementioned.</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Synthetic Evaluation Data Information Section</rdfs:label>
@@ -1004,9 +1051,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000036 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000036 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000036">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>Content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical. &quot;This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?&quot;</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
@@ -1017,10 +1064,10 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000037 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000037 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000037">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000006"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000037">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000006"/>
         <obo:IAO_0000115>The section is for information about the training data used for evaluation of a machine learning model.</obo:IAO_0000115>
         <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
         <rdfs:label>Training Data Information Section</rdfs:label>
@@ -1028,9 +1075,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000038 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000038 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000038">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>The content here involves information about intential uses of the model.
 &quot;This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.&quot;</obo:IAO_0000115>
@@ -1041,9 +1088,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000039 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000039 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000039">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>Content information pertaining to intended users of the model. This includes individuals that may be impacted as an outcome of the use of the model.</obo:IAO_0000115>
         <rdfs:comment>target user for the model</rdfs:comment>
@@ -1053,9 +1100,9 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_000040 -->
+    <!-- http://sbmi.uth.edu/ontology/mcro#mcro_0000040 -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_000040">
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/mcro#mcro_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1065,13 +1112,13 @@ Details on the dataset(s) used for the quantitative analyses in the card.
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000045"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000045"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_000048"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/mcro#mcro_0000048"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
