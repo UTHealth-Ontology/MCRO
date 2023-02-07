@@ -11,7 +11,7 @@ This ontology utilizes:
 * Simple Knowledge Organization System
 
 
-Creators and contributors:
+## Creators and contributors:
 * Tuan Amith
 * Cui Tao
 * Degui Zhi
