@@ -80,110 +80,110 @@ swo:SWO_9001002 rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000041
-mcro:mcro_0000041 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000041
+mcro:MCRO_0000041 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "additional information abou the citation associated with the model" ;
                   rdfs:label "citation text" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000042
-mcro:mcro_0000042 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000042
+mcro:MCRO_0000042 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range xsd:decimal ;
                   obo:IAO_0000115 "value of the confidence interval attributed to the Performance Metric concept" ;
                   rdfs:label "confidence interval value" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000043
-mcro:mcro_0000043 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000043
+mcro:MCRO_0000043 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "Data pertaining to the contact information of the model's contact information. This is associated to the Owner Information class of the Model Card Ontology" ;
                   rdfs:label "contact text" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000044
-mcro:mcro_0000044 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000044
+mcro:MCRO_0000044 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "Additional textual information attributed to the licensing information." ;
                   rdfs:label "custom_text" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000045
-mcro:mcro_0000045 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000045
+mcro:MCRO_0000045 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "Detailed textual information of the model card that is attributed to specific concepts of the Model Card Ontology. This contrasts with the \"overview\" data property as the \"overview\" has a summarized version of \"documentation\"" ;
                   rdfs:label "documentation" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000046
-mcro:mcro_0000046 rdf:type owl:DatatypeProperty ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000046
+mcro:MCRO_0000046 rdf:type owl:DatatypeProperty ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "Model Card Report Ontology specific data properties that provide attributes to its concepts." ;
                   rdfs:label "model card text" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000047
-mcro:mcro_0000047 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000047
+mcro:MCRO_0000047 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "Name of the owner of the model. This is linked to the Owner Information concept of the Model Card Ontology" ;
                   rdfs:label "name text" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000048
-mcro:mcro_0000048 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000048
+mcro:MCRO_0000048 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdf:type owl:FunctionalProperty ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "Summary textual information for the concepts of the Model Card Ontology" ;
                   rdfs:label "overview" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000049
-mcro:mcro_0000049 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000049
+mcro:MCRO_0000049 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdf:type owl:FunctionalProperty ;
                   rdfs:range xsd:decimal ;
                   obo:IAO_0000115 "general numeric value associated with the Performance Metric concepts" ;
                   rdfs:label "performance metric value" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000050
-mcro:mcro_0000050 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
-                  rdfs:domain mcro:mcro_0000034 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000050
+mcro:MCRO_0000050 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
+                  rdfs:domain mcro:MCRO_0000034 ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "\"A description of any sensitive data that may be present in adataset. Be sure to note PII information such as names, addresses, phone numbers, etc. Preferably, such info should be scrubbed from a dataset if possible. Note that even non-identifying information, such as zip code, age, race, and gender, can be used to identify individuals when aggregated. Please describe any such fields here\" Google LLC" ;
                   rdfs:label "sensitive data" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000051
-mcro:mcro_0000051 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000051
+mcro:MCRO_0000051 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range rdfs:Literal ;
                   obo:IAO_0000115 "This is data property is specific to Perfomance Metric concepts. It attributes information about the data partition used to experiment on the model." ;
                   rdfs:label "slice" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000052
-mcro:mcro_0000052 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf mcro:mcro_0000046 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000052
+mcro:MCRO_0000052 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf mcro:MCRO_0000046 ;
                   rdfs:range xsd:decimal ;
                   obo:IAO_0000115 "This is a value pertaining to a threshold value that is attributed to the Performance Metric concept for the Model Card ontology." ;
                   rdfs:label "threshold value" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_000042
-mcro:mcro_000042 rdf:type owl:DatatypeProperty .
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_000042
+mcro:MCRO_000042 rdf:type owl:DatatypeProperty .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_000043
-mcro:mcro_000043 rdf:type owl:DatatypeProperty .
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_000043
+mcro:MCRO_000043 rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -206,8 +206,8 @@ obo:IAO_0000314 rdf:type owl:Class .
 obo:IAO_0000320 rdf:type owl:Class .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000001
-mcro:mcro_0000001 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000001
+mcro:MCRO_0000001 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000088 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000136 ;
@@ -215,89 +215,89 @@ mcro:mcro_0000001 rdf:type owl:Class ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:allValuesFrom mcro:mcro_0000005
+                                    owl:allValuesFrom mcro:MCRO_0000005
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:allValuesFrom mcro:mcro_0000021
+                                    owl:allValuesFrom mcro:MCRO_0000021
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:allValuesFrom mcro:mcro_0000022
+                                    owl:allValuesFrom mcro:MCRO_0000022
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:allValuesFrom mcro:mcro_0000031
+                                    owl:allValuesFrom mcro:MCRO_0000031
                                   ] ;
                   obo:IAO_0000115 "The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation. A report that details characteristics of machine learning model to supplement its release to the public." ;
                   obo:IAO_0000119 "Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596" ;
                   rdfs:label "Model Card Report" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000002
-mcro:mcro_0000002 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000027 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000002
+mcro:MCRO_0000002 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000027 ;
                   obo:IAO_0000115 "Section content in this section should describe information in \"how close or far off a given set of measurements (observations or readings) are to their true value\"" ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Accuracy_and_precision" ;
                   rdfs:label "Accuracy Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000003
-mcro:mcro_0000003 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000027 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000003
+mcro:MCRO_0000003 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000027 ;
                   obo:IAO_0000115 "The content describes information pertaining to the area under the ROC curve." ;
                   rdfs:label "Area Under the Curve Information Section" ;
                   skos:altLabel "AUC" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000004
-mcro:mcro_0000004 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000004
+mcro:MCRO_0000004 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
                                     owl:someValuesFrom obo:IAO_0000301
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "information relating to the citation for the targetted model. This is part of the model details component of the model card report" ;
                   rdfs:label "Citation Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000005
-mcro:mcro_0000005 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000005
+mcro:MCRO_0000005 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000007
+                                    owl:someValuesFrom mcro:MCRO_0000007
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000017
+                                    owl:someValuesFrom mcro:MCRO_0000017
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000036
+                                    owl:someValuesFrom mcro:MCRO_0000036
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000038
+                                    owl:someValuesFrom mcro:MCRO_0000038
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000039
+                                    owl:someValuesFrom mcro:MCRO_0000039
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "This section pertains to \"Factors\" of the model card report by Mitchell et al., 2019. The considerations section includes qualitative information about your model, including some analysis of its risks and limitations. As such, this section usually requires careful consideration, and conversations with many relevant  stakeholders, including other model developers, dataset producers, and downstream users likely to interact with your model, or be affected by its outputs." ;
@@ -305,16 +305,16 @@ mcro:mcro_0000005 rdf:type owl:Class ;
                   skos:altLabel "Factors" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000006
-mcro:mcro_0000006 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000006
+mcro:MCRO_0000006 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000050 ;
-                                    owl:someValuesFrom mcro:mcro_0000022
+                                    owl:someValuesFrom mcro:MCRO_0000022
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000050 ;
-                                    owl:someValuesFrom mcro:mcro_0000031
+                                    owl:someValuesFrom mcro:MCRO_0000031
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
@@ -322,7 +322,7 @@ mcro:mcro_0000006 rdf:type owl:Class ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000014
+                                    owl:someValuesFrom mcro:MCRO_0000014
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000136 ;
@@ -332,16 +332,16 @@ mcro:mcro_0000006 rdf:type owl:Class ;
                   rdfs:label "Dataset Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000007
-mcro:mcro_0000007 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000033 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000007
+mcro:MCRO_0000007 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000033 ;
                   obo:IAO_0000115 "Content information that is a type of risk information that is specific to ethical consideration if using the model." ;
                   rdfs:label "Ethical Consideration Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000008
-mcro:mcro_0000008 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000006 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000008
+mcro:MCRO_0000008 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000006 ;
                   obo:IAO_0000115 """The section is devoted in describing the evaluation dataset. \"Evaluation datasets should include datasets that are publicly available for third-party use. These could be existing datasets or new ones provided alongside the model card analyses to enable further benchmarking... the evaluation datasets should not only be representative of the model’s typical use cases but also anticipated test scenarios and challenging cases.\"
 
 Details on the dataset(s) used for the quantitative analyses in the card. 
@@ -354,17 +354,17 @@ Details on the dataset(s) used for the quantitative analyses in the card.
                   rdfs:label "Evaluation Data Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000009
-mcro:mcro_0000009 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000027 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000009
+mcro:MCRO_0000009 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000027 ;
                   obo:IAO_0000115 "The F1 score is the harmonic mean of the precision and recall. This section describes information relating to the F1 score revealed by the performance of the machine learning model." ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/F-score" ;
                   rdfs:label "F1-Score Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000010
-mcro:mcro_0000010 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000027 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000010
+mcro:MCRO_0000010 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000027 ;
                   obo:IAO_0000115 """The section describes information about the false discovery rate of the machine learning model. 
 
 \"The false discovery rate (FDR) is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons. FDR-controlling procedures are designed to control the FDR, which is the expected proportion of \"discoveries\" (rejected null hypotheses) that are false (incorrect rejections of the null)\". quivalently, the FDR is the expected ratio of the number of false positive classifications (false discoveries) to the total number of positive classifications (rejections of the null). The total number of rejections of the null include both the number of false positives (FP) and true positives (TP). Simply put, FDR = FP / (FP + TP). FDR-controlling procedures provide less stringent control of Type I errors compared to familywise error rate (FWER) controlling procedures (such as the Bonferroni correction), which control the probability of at least one Type I error. Thus, FDR-controlling procedures have greater power, at the cost of increased numbers of Type I errors.\"""" ;
@@ -372,24 +372,24 @@ mcro:mcro_0000010 rdf:type owl:Class ;
                   rdfs:label "False Discovery Rate Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000011
-mcro:mcro_0000011 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000027 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000011
+mcro:MCRO_0000011 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000027 ;
                   obo:IAO_0000115 "This section describes information relating to false ommision rate of the performance of the machine learning model. FOR is the probability that the true value is positive." ;
                   rdfs:label "False Ommission Rate Section Information" ;
                   skos:altLabel "FOR" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000012
-mcro:mcro_0000012 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000027 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000012
+mcro:MCRO_0000012 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000027 ;
                   obo:IAO_0000115 "This content describes the information pertaining to the model's false postive rate. \"A false positive error, or false positive, is a result that indicates a given condition exists when it does not. For example, a pregnancy test which indicates a woman is pregnant when she is not, or the conviction of an innocent person. A false positive error is a type I error where the test is checking a single condition, and wrongly gives an affirmative (positive) decision.\"" ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error" ;
                   rdfs:label "False Positive Rate Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000013
-mcro:mcro_0000013 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000013
+mcro:MCRO_0000013 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000136 ;
@@ -399,8 +399,8 @@ mcro:mcro_0000013 rdf:type owl:Class ;
                   rdfs:label "Format Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000014
-mcro:mcro_0000014 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000014
+mcro:MCRO_0000014 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   skos:Collection ,
                                   [ rdf:type owl:Restriction ;
@@ -411,56 +411,56 @@ mcro:mcro_0000014 rdf:type owl:Class ;
                   rdfs:label "Graphic Collection Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000015
-mcro:mcro_0000015 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000013 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000015
+mcro:MCRO_0000015 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000013 ;
                   obo:IAO_0000115 "This secton content serves to describe the inputed data's format for the machine learning model." ;
                   rdfs:label "Input Format Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000016
-mcro:mcro_0000016 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000016
+mcro:MCRO_0000016 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000136 ;
                                     owl:someValuesFrom swo:SWO_0000002
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000044 ;
+                                    owl:onProperty mcro:MCRO_0000044 ;
                                     owl:someValuesFrom xsd:string
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "Section for information about the licensing for the machine learning model." ;
                   rdfs:label "License Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000017
-mcro:mcro_0000017 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000017
+mcro:MCRO_0000017 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ;
                   obo:IAO_0000115 "Content section relating to the technical limits of the machine learning model (e.g. trained on ungeneralized data)." ;
                   rdfs:label "Limitation Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000018
-mcro:mcro_0000018 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000018
+mcro:MCRO_0000018 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000050 ;
-                                    owl:someValuesFrom mcro:mcro_0000033
+                                    owl:someValuesFrom mcro:MCRO_0000033
                                   ] ;
                   obo:IAO_0000115 "Content section of the model card that addresses the risk or ethical consideration of the model." ;
                   rdfs:label "Mitigation Strategy Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000019
-mcro:mcro_0000019 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000019
+mcro:MCRO_0000019 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000136 ;
@@ -474,46 +474,46 @@ mcro:mcro_0000019 rdf:type owl:Class ;
                   rdfs:label "Model Architecture Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000020
-mcro:mcro_0000020 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000020
+mcro:MCRO_0000020 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000038 ;
                   obo:IAO_0000115 "a graph content specifically for a model card report" ;
                   rdfs:label "Model Card Graphic" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000021
-mcro:mcro_0000021 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000021
+mcro:MCRO_0000021 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000004
+                                    owl:someValuesFrom mcro:MCRO_0000004
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000016
+                                    owl:someValuesFrom mcro:MCRO_0000016
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000019
+                                    owl:someValuesFrom mcro:MCRO_0000019
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000025
+                                    owl:someValuesFrom mcro:MCRO_0000025
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000032
+                                    owl:someValuesFrom mcro:MCRO_0000032
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000040
+                                    owl:someValuesFrom mcro:MCRO_0000040
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "Basic information about the model that includes licensing information, owner information, the architecture of the model (algorthim employed), references (cited papers), and versioning information." ;
@@ -521,40 +521,40 @@ mcro:mcro_0000021 rdf:type owl:Class ;
                   rdfs:label "Model Detail Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000022
-mcro:mcro_0000022 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000022
+mcro:MCRO_0000022 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000006
+                                    owl:someValuesFrom mcro:MCRO_0000006
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000015
+                                    owl:someValuesFrom mcro:MCRO_0000015
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000019
+                                    owl:someValuesFrom mcro:MCRO_0000019
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000024
+                                    owl:someValuesFrom mcro:MCRO_0000024
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "Section summarizing the content relating to the parameters for the development of the model." ;
                   rdfs:label "Model Parameter Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000023
-mcro:mcro_0000023 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000038 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000023
+mcro:MCRO_0000023 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000038 ;
                   obo:IAO_0000112 "\"for use on black-and-white images only; please consider our research group’s full-color-image classifier for color images.”" ,
                                   "\"not for use on text examples shorter than 100 tokens\"" ;
                   obo:IAO_0000115 "\"Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.\" Content that is a type of use case information but specific to use cases that are out of scope of the intended use case." ;
@@ -562,15 +562,15 @@ mcro:mcro_0000023 rdf:type owl:Class ;
                   rdfs:label "Out of Scope Use Case Section Information" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000024
-mcro:mcro_0000024 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000013 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000024
+mcro:MCRO_0000024 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000013 ;
                   obo:IAO_0000115 "This secton content serves to describe the outputted data's format for the machine learning model." ;
                   rdfs:label "Output Format Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000025
-mcro:mcro_0000025 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000025
+mcro:MCRO_0000025 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000136 ;
@@ -581,82 +581,82 @@ mcro:mcro_0000025 rdf:type owl:Class ;
                                                        ]
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000047 ;
+                                    owl:onProperty mcro:MCRO_0000047 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_000043 ;
+                                    owl:onProperty mcro:MCRO_000043 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "Section for the information about the individuals involved in the development of the machine learning model. This includes contact information, the names of the individuals, etc." ;
                   rdfs:label "Owner Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000026
-mcro:mcro_0000026 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000027 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000026
+mcro:MCRO_0000026 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000027 ;
                   obo:IAO_0000115 "This section is for the description of the precision and recall information of the machine learning model's performance." ;
                   rdfs:label "Percision-Recall Curve Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000027
-mcro:mcro_0000027 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000027
+mcro:MCRO_0000027 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000049 ;
+                                    owl:onProperty mcro:MCRO_0000049 ;
                                     owl:someValuesFrom xsd:decimal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000051 ;
+                                    owl:onProperty mcro:MCRO_0000051 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000052 ;
+                                    owl:onProperty mcro:MCRO_0000052 ;
                                     owl:someValuesFrom xsd:decimal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_000042 ;
+                                    owl:onProperty mcro:MCRO_000042 ;
                                     owl:someValuesFrom xsd:decimal
                                   ] ;
                   obo:IAO_0000115 "Section content here summarizing the information about the metrics (precision, recall, f1 score, etc.) that measured the performance of the model. One can report the values and portion of the data (slice)." ;
                   rdfs:label "Performance Metric Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000028
-mcro:mcro_0000028 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000034 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000028
+mcro:MCRO_0000028 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000034 ;
                   obo:IAO_0000115 "personally identifiable information as \"any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual's identity, such as name, social security number, date and place of birth, mother's maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.\" The section should specificially describe information about the personally identifiable datasets." ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Personal_data" ,
                                   "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf" ;
                   rdfs:label "Personally Identifiable Data Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000029
-mcro:mcro_0000029 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000038 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000029
+mcro:MCRO_0000029 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000038 ;
                   obo:IAO_0000115 "\"This section details whether the model was developed with general or specific tasks in mind (e.g., plant recognition worldwide or in the Pacific Northwest). The use cases may be as broadly or narrowly defined as the developers intend. For example, if the model was built simply to label images, then this task should be indicated as the primary intended use case.\"" ;
                   obo:IAO_0000119 "Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596" ;
                   rdfs:label "Primary Intended Use Case Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000030
-mcro:mcro_0000030 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000039 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000030
+mcro:MCRO_0000030 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000039 ;
                   obo:IAO_0000115 "This section describes the primary intended user for the machine learning model. \"For example, was the model developed for entertainment purposes, for hobbyists, or enterprise solutions? This helps users gain insight into how robust the model may be to different kinds of inputs.\"" ;
                   obo:IAO_0000119 "Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596" ;
                   rdfs:label "Primary Intended User Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000031
-mcro:mcro_0000031 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000031
+mcro:MCRO_0000031 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
@@ -664,22 +664,22 @@ mcro:mcro_0000031 rdf:type owl:Class ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000006
+                                    owl:someValuesFrom mcro:MCRO_0000006
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000014
+                                    owl:someValuesFrom mcro:MCRO_0000014
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom mcro:mcro_0000027
+                                    owl:someValuesFrom mcro:MCRO_0000027
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "content overview of the quantatitve analysis of the model, specifically the performance of the model" ;
@@ -689,53 +689,53 @@ mcro:mcro_0000031 rdf:type owl:Class ;
                   skos:prefLabel "Quantative Analysis" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000032
-mcro:mcro_0000032 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000032
+mcro:MCRO_0000032 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty prov:wasDerivedFrom ;
                                     owl:someValuesFrom obo:IAO_0000310
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "information for any references related to the machine learning model (research papers, website, etc.)" ;
                   rdfs:label "Reference Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000033
-mcro:mcro_0000033 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000033
+mcro:MCRO_0000033 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ;
                   obo:IAO_0000115 "Content information relating to potential uncertainity about utilizing the model" ;
                   rdfs:label "Risk Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000034
-mcro:mcro_0000034 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000006 ,
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000034
+mcro:MCRO_0000034 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000006 ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000050 ;
+                                    owl:onProperty mcro:MCRO_0000050 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "Information relating to sensitive datasets that contain info like personal information that was used to develop the machine learning model" ;
                   rdfs:label "Sensitive Data Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000035
-mcro:mcro_0000035 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000008 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000035
+mcro:MCRO_0000035 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000008 ;
                   obo:IAO_0000115 "The section is devoted in descrbing the synthetic evaluation datasets used for a machine learning model. Synthetic evaluation datasets are a type of evaluation dataset. \"It is often difficult to find datasets that represent populations outside of the initial domain used in training. In some of these situations, synthetically generated datasets may provide representation for use cases that would otherwise go unevaluated\" (Mitchell et al., 2019). This section should described the aforementioned." ;
                   obo:IAO_0000119 "Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596" ;
                   rdfs:label "Synthetic Evaluation Data Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000036
-mcro:mcro_0000036 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000036
+mcro:MCRO_0000036 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ;
                   obo:IAO_0000115 "Content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical. \"This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?\"" ;
                   obo:IAO_0000119 "Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596" ;
@@ -744,16 +744,16 @@ mcro:mcro_0000036 rdf:type owl:Class ;
                                 "Recommendations" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000037
-mcro:mcro_0000037 rdf:type owl:Class ;
-                  rdfs:subClassOf mcro:mcro_0000006 ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000037
+mcro:MCRO_0000037 rdf:type owl:Class ;
+                  rdfs:subClassOf mcro:MCRO_0000006 ;
                   obo:IAO_0000115 "The section is for information about the training data used for evaluation of a machine learning model." ;
                   obo:IAO_0000119 "Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596" ;
                   rdfs:label "Training Data Information Section" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000038
-mcro:mcro_0000038 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000038
+mcro:MCRO_0000038 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ;
                   obo:IAO_0000115 """The content here involves information about intential uses of the model.
 \"This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.\"""" ;
@@ -762,8 +762,8 @@ mcro:mcro_0000038 rdf:type owl:Class ;
                   skos:altLabel "Intended Use" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000039
-mcro:mcro_0000039 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000039
+mcro:MCRO_0000039 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ;
                   obo:IAO_0000115 "Content information pertaining to intended users of the model. This includes individuals that may be impacted as an outcome of the use of the model." ;
                   rdfs:comment "target user for the model" ;
@@ -771,19 +771,19 @@ mcro:mcro_0000039 rdf:type owl:Class ;
                   skos:altLabel "Intended User Information" .
 
 
-###  http://sbmi.uth.edu/ontology/mcro#mcro_0000040
-mcro:mcro_0000040 rdf:type owl:Class ;
+###  http://sbmi.uth.edu/ontology/mcro#MCRO_0000040
+mcro:MCRO_0000040 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000314 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000136 ;
                                     owl:someValuesFrom obo:IAO_0000129
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000045 ;
+                                    owl:onProperty mcro:MCRO_0000045 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty mcro:mcro_0000048 ;
+                                    owl:onProperty mcro:MCRO_0000048 ;
                                     owl:someValuesFrom rdfs:Literal
                                   ] ;
                   obo:IAO_0000115 "This content section describes any versioning information for the machine learning model." ;
