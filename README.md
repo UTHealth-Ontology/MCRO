@@ -9,6 +9,10 @@ This ontology utilizes:
 * Software Ontology (only a subset, see [SWO import](https://github.com/UTHealth-Ontology/MCO/tree/main/import) for details.)
 * Provenance Ontology
 * Simple Knowledge Organization System
+ 
+ ## File
+
+PURL: http://purl.obolibrary.org/obo/mcro.owl
 
 
 ## Creators and contributors:
