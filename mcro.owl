@@ -30,7 +30,7 @@
         <terms:contributor>Xiaqian Jiang</terms:contributor>
         <terms:creator>Tuan Amith and Cui Tao</terms:creator>
         <terms:description>An ontology representing the model card structure</terms:description>
-        <terms:license>https://creativecommons.org/licenses/by/3.0/</terms:license>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Model Card Ontology</terms:title>
         <owl:versionInfo>2023-03-07</owl:versionInfo>
     </owl:Ontology>
