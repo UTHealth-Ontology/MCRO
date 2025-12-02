@@ -1180,6 +1180,20 @@ Details on the dataset(s) used for the quantitative analyses in the card.
     <!-- http://www.w3.org/ns/prov-o# -->
 
     <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
 </rdf:RDF>
 
 
